@@ -1,13 +1,22 @@
-.page-header__logo-image {
-  margin: 0;
-  padding: 0 20px;
-  padding-left: 109px;
-  width: 102px;
-  position: absolute;
-  background-color: transparent;
-  z-index: 1;
-}
-
 .page-header {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
   position: relative;
+
+  &__logo {
+    width: 320px;
+    margin: 0;
+    margin-left: 89px;
+    padding: 0 20px;
+  
+    &-image {
+      width: 102px;
+      margin: 0 auto;
+      padding: 0;
+      position: absolute;
+      background-color: transparent;
+      z-index: 1;
+    }
+  }
 }

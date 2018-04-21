@@ -3,25 +3,28 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Sedona</title>
-  <link href="css/style.css" rel="stylesheet">
+  <title>Главная - Sedona</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="page-index">
+<body>
   <header class="page-header">
     <nav class="main-nav">
       <ul class="main-nav__list site-list">
         <li class="site-list__item site-list__item--active">
-          <a>Главная</a>
+          <a class="site-list__link">Главная</a>
         </li>
         <li class="site-list__item">
-          <a href="photo.html">Фото и видео</a>
+          <a class="site-list__link" href="photo.html">Фото и видео</a>
         </li>
         <li class="site-list__item">
-          <a href="form.html">Форма отзыва</a>
+          <a class="site-list__link" href="form.html">Форма отзыва</a>
         </li>
         <li class="site-list__item">
-          <a href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         </li>
       </ul>
       <a class="page-header__logo">
@@ -51,15 +54,15 @@
         <img class="city__image" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Настоящий городок">
         <ul class="city__list">
           <li class="city__item">
-            <h3 class="city__features">Жилье</h3>
+            <h3 class="city__features city__features-accommodation">Жилье</h3>
             <p class="city__features-description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
           </li>
           <li class="city__item">
-            <h3 class="city__features">Сувениры</h3>
+            <h3 class="city__features city__features-souvenirs">Сувениры</h3>
             <p class="city__features-description">Не только китайского, но и местного производства!</p>
           </li>
           <li class="city__item">
-            <h3 class="city__features">Еда</h3>
+            <h3 class="city__features city__features-food">Еда</h3>
             <p class="city__features-description">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
           </li>
         </ul>
@@ -131,8 +134,7 @@
 
     <div class="developer">
       <a class="developer__link" href="https://htmlacademy.ru/intensive/adaptive">
-        <b class="developer__item">Разработано
-        </b>
+        <b class="developer__item">Разработано</b>
       </a>
     </div>
   </footer>

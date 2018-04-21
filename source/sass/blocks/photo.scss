@@ -1,71 +1,71 @@
 .photo {
-  margin: 0;
+  width: 320px;
+  margin: 0 auto;
   padding: 0;
-}
 
-.photo__item-wrapper {
-  margin: 0;
-  padding: 0 20px;
-}
-
-.photo__original {
-  margin: 0;
-  padding: 0;
-}
-
-.photo__list {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  list-style: none;
-}
-
-.photo__item {
-  margin: 0;
-  padding: 0;
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.photo__image {
-  margin-bottom: 17px;
-  width: 280px;
-  height: 280px;
-  display: block;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  background-color: #ffffff;
-}
-
-.photo__title {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 4px;
-  display: flex;
-  text-transform: uppercase;
-}
-
-.photo__author {
-  margin: 0;
-  padding: 0;
-  padding-bottom: 10px;
-  display: flex;
-  font-size: 14px;
-  line-height: 24px;
-}
-
-.photo__like {
-  margin: 0;
-  padding: 0;
-  padding-left: 35px;
-  padding-bottom: 18px;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  display: inline-block;
+  &__item-wrapper {
+    margin: 0;
+    padding: 0 20px;
+  }
+  
+  &__original {
+    margin: 0;
+    padding: 0;
+  }
+  
+  &__list {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+  }
+  
+  &__item {
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+  &__image {
+    margin-bottom: 17px;
+    width: 280px;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    background-color: #ffffff;
+  }
+  
+  &__title {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 4px;
+    display: flex;
+    text-transform: uppercase;
+  }
+  
+  &__author {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+    display: flex;
+    font-size: 14px;
+    line-height: 24px;
+  }
+  
+  &__like {
+    margin: 0;
+    padding: 0;
+    padding-left: 35px;
+    padding-bottom: 18px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    display: inline-block;
+  }
 }

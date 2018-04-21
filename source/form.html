@@ -3,8 +3,11 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Sedona</title>
-  <link href="css/style.css" rel="stylesheet">
+  <title>Отзывы - Sedona</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="format-detection" content="telephone=no">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="form-page">
@@ -48,15 +51,15 @@
           <legend class="review__title">Представьтесь:</legend>
           <p class="review__option">
             <label for="name">Имя*:</label>
-            <input class="review__input" type="text" name="review-name" id="name" required>
+            <input class="review__input" type="text" name="review-name" id="name" value="Петр" required>
           </p>
           <p class="review__option">
             <label for="surname">Фамилия*:</label>
-            <input class="review__input" type="text" name="review-surname" id="surname" required>
+            <input class="review__input" type="text" name="review-surname" id="surname" value="Иванов" required>
           </p>
           <p class="review__option">
             <label for="patronymic">Отчество:</label>
-            <input class="review__input" type="text" name="review-patronymic" id="patronymic">
+            <input class="review__input" type="text" name="review-patronymic" id="patronymic" value="Александрович" >
           </p>
         </fieldset>
         <fieldset class="review__item">
