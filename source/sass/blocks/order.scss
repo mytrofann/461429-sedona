@@ -21,7 +21,7 @@
     padding-bottom: 20px;
     font-size: 21px;
     line-height: 26px;
-    font-weight: bold;
+    font-weight: 700;
     text-transform: uppercase;
     text-align: center;
   }
@@ -38,7 +38,27 @@
   
   &__maps {
     width: 320px;
-    display: block;
+    height: 350px;
+    margin: 0 auto;
+    padding: 0;
+    display: inline-block;
+    position: relative;
+    background-image: url("../img/bg-map-mobile@1x.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  
+  &__maps::before {
+    content: "";
+    top: 161px;
+    left: 145px;
+    width: 27px;
+    height: 27px;
+    display: inline-block;
+    position: relative;
+    background-image: url("../img/icon-map-marker.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
   }
   
   &__button {

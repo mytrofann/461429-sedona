@@ -1,18 +1,20 @@
 .page-header {
   width: 320px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0;
   position: relative;
+  box-sizing: border-box;
+  background-color: #ffffff;
 
   &__logo {
     width: 320px;
     margin: 0;
-    margin-left: 89px;
-    padding: 0 20px;
+    margin-left: 110px;
+    padding: 0;
   
     &-image {
       width: 102px;
-      margin: 0 auto;
+      margin: 0;
       padding: 0;
       position: absolute;
       background-color: transparent;

@@ -22,17 +22,17 @@
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
-  }
   
-  &__item::before {
-    content: "";
-    position: absolute;
-    top: -7px;
-    left: 102px;
-    width: 27px;
-    height: 34px;
-    background-image: url("../img/logo-htmlacademy.svg");
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    &::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: 102px;
+      width: 27px;
+      height: 34px;
+      background-image: url("../img/logo-htmlacademy.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
   }
 }

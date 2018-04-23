@@ -1,8 +1,10 @@
 .video {
   width: 320px;
   margin: 0 auto;
-  margin-bottom: 135px;
-  padding: 0 20px;
+  padding-bottom: 135px;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ffffff;
 
   &_wrapper {
     margin: 0;

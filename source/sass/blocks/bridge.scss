@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0 20px;
     padding-top: 30px;
-    padding-bottom: 37px;
+    padding-bottom: 40px;
     display: inline-block;
     background-color: #81b3d2;
   }
@@ -56,14 +56,17 @@
   }
 
   &__image {
-    display: block;
     width: 320px;
+    height: 260px;
+    display: block;
     background-color: #ffffff;
+    background-image: url("../img/main-bridge-mobile@1x.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
   }
 
   &__list {
     margin: 0;
-    margin-bottom: -2px;
     padding: 0 20px;
     display: inline-block;
     list-style: none;
@@ -85,7 +88,7 @@
   &__features {
     margin: 0;
     padding: 0;
-    padding-bottom: 5px;
+    padding-bottom: 9px;
     font-size: 18px;
     line-height: 26px;
     font-weight: bold;

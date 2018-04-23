@@ -2,6 +2,7 @@
   width: 320px;
   margin: 0 auto;
   padding: 0;
+  position: relative;
   display: flex;
   flex-direction: column;
 
@@ -16,7 +17,8 @@
   &__title {
     margin: 0;
     padding: 0;
-    padding-bottom: 5px;
+    padding-top: 2px;
+    padding-bottom: 9px;
     font-size: 18px;
     line-height: 26px;
     font-weight: 500;
@@ -37,26 +39,30 @@
   
   &__image {
     width: 320px;
+    height: 260px;
     display: block;
     background-color: #ffffff;
+    background-image: url("../img/main-city-mobile@1x.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
   }
   
   &__list {
     margin: 0;
     padding: 20px;
     padding-top: 35px;
-    padding-bottom: 6px;
+    padding-bottom: 9px;
     padding-left: 69px;
     display: inline-block;
     position: relative;
     list-style: none;
-    background-color: #eeeeee;
+    background-color: #ffffff;
   }
   
   &__item {
     margin: 0;
     padding: 0;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
   }
   
   &__features {
