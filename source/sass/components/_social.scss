@@ -62,3 +62,23 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+
+  .social {
+    width: 256px;
+    margin: 0;
+    padding: 0;
+    
+    &__list {
+      padding-left: 47px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .social__list {
+    padding-left: 75px;
+  }
+}

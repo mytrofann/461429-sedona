@@ -1,27 +1,29 @@
-@import "normalize.scss";
-@import "variables.scss";
-@import "scaffolding.scss";
-@import "blocks/developer.scss";
-@import "blocks/hashtag.scss";
-@import "blocks/main-nav.scss";
-@import "blocks/page-footer.scss";
-@import "blocks/page-header.scss";
-@import "blocks/site-list.scss";
-@import "blocks/social.scss";
-@import "blocks/bridge.scss";
-@import "blocks/city.scss";
-@import "blocks/features-wrapper.scss";
-@import "blocks/order.scss";
-@import "blocks/page-main.scss";
-@import "blocks/slider.scss";
-@import "blocks/photo.scss";
-@import "blocks/photo-page.scss";
-@import "blocks/photo-page-main.scss";
-@import "blocks/slider-second.scss";
-@import "blocks/video.scss";
-@import "blocks/form-page.scss";
-@import "blocks/form-page-main.scss";
-@import "blocks/review.scss";
-@import "blocks/slider-third.scss";
-@import "blocks/modal-failur.scss";
-@import "blocks/modal-success.scss";
+@import 'vendors/normalize';
+
+@import 'utils/variables';
+@import 'utils/helpers';
+
+@import 'base/fonts';
+@import 'base/scaffolding';
+
+@import 'layout/main-nav';
+@import 'layout/site-list';
+@import 'layout/page-header';
+@import 'layout/page-footer';
+@import 'layout/slider';
+@import 'layout/slider-second';
+@import 'layout/slider-third';
+@import 'layout/modal-failur';
+@import 'layout/modal-success';
+
+@import 'components/hashtag';
+@import 'components/social';
+@import 'components/developer';
+
+@import 'pages/city';
+@import 'pages/bridge';
+@import 'pages/order';
+@import 'pages/photo';
+@import 'pages/video';
+@import 'pages/review';
+

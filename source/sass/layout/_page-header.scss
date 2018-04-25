@@ -7,7 +7,6 @@
   background-color: #ffffff;
 
   &__logo {
-    width: 320px;
     margin: 0;
     margin-left: 110px;
     padding: 0;
@@ -18,7 +17,29 @@
       padding: 0;
       position: absolute;
       background-color: transparent;
-      z-index: 1;
+      z-index: 10;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .page-header {
+    width: 768px;
+
+    &__logo {
+      margin-left: 333px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .page-header {
+    width: 1200px;
+
+    &__logo {
+      margin-left: 548px;
     }
   }
 }

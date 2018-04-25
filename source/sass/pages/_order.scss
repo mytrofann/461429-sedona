@@ -41,7 +41,7 @@
     height: 350px;
     margin: 0 auto;
     padding: 0;
-    display: inline-block;
+    display: block;
     position: relative;
     background-image: url("../img/bg-map-mobile@1x.jpg");
     background-position: top center;
@@ -55,7 +55,7 @@
     width: 27px;
     height: 27px;
     display: inline-block;
-    position: relative;
+    position: absolute;
     background-image: url("../img/icon-map-marker.svg");
     background-position: top center;
     background-repeat: no-repeat;
@@ -74,5 +74,82 @@
     text-transform: uppercase;
     background-color: #81b3d2;
     color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  
+  .order {
+    width: 768px;
+  
+    &__title {
+      padding-top: 24px;
+      padding-bottom: 30px;
+      font-size: 30px;
+    }
+  
+    &__description {
+      padding: 0 165px;
+      margin-bottom: 42px;
+    }
+  
+    &__maps {
+      width: 768px;
+      height: 350px;
+      display: block;
+      position: relative;
+      background-image: url("../img/map-tablet.jpg");
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+    
+    &__button {
+      margin: 0 135px;
+      margin-bottom: 29px;
+      padding: 16px 90px;
+      max-width: 280px;
+    }
+  
+    &__maps::before {
+      content: "";
+      top: 164px;
+      left: 370px;
+      width: 27px;
+      height: 27px;
+      display: block;
+      position: absolute;
+      background-image: url("../img/icon-map-marker.svg");
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  
+  .order {
+    width: 1200px;
+  
+    &__description {
+      padding: 0 365px;
+      margin-bottom: 50px;
+    }
+  
+    &__maps {
+      width: 1200px;
+      background-image: url("../img/map-desktop.jpg");
+    }
+    
+    &__button {
+      margin: 0 350px;
+      margin-bottom: 35px;
+      padding: 16px 90px;
+      max-width: 280px;
+    }
+  
+    &__maps::before {
+      top: 164px;
+      left: 586px;
+    }
   }
 }

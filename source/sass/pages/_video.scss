@@ -1,8 +1,8 @@
 .video {
   width: 320px;
   margin: 0 auto;
-  padding-bottom: 135px;
   padding: 0;
+  padding-bottom: 135px;
   box-sizing: border-box;
   background-color: #ffffff;
 
@@ -29,5 +29,36 @@
     line-height: 24px;
     text-transform: uppercase;
     text-align: center;
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .video {
+    width: 768px;
+    padding: 0 60px;
+    padding-bottom: 135px;
+  
+    &_wrapper {
+      padding: 20px 110px;
+    }
+  
+    &__title {
+      margin-bottom: 30px;
+      box-sizing: border-box;
+      font-size: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .video {
+    width: 1200px;
+    margin-bottom: 293px;
+  
+    &_wrapper {
+      padding: 20px 310px;
+    }
   }
 }

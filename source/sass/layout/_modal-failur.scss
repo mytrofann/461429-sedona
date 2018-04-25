@@ -1,13 +1,13 @@
 .modal-failur {
-  margin: 0;
+  margin: 0 auto;
   padding: 0 20px;
-  max-width: 320px;
-  transform: translateY(-960px);
+  width: 320px;
+  transform: translate(50%) translateY(-970px);
   display: none;
   position: absolute;
   box-sizing: border-box;
   background-color: #ffffff;
-  box-shadow: 0 1px 3px 0 rgba(17, 17, 17, 0.35);
+  box-shadow: 0 1px 5px 0 rgba(17, 17, 17, 0.25);
   background-color: #ffffff;
   z-index: 3;
 
@@ -48,5 +48,39 @@
     border: none;
     cursor: pointer;
     color: #ffffff;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .modal-failur {
+    padding: 0 42px;
+    width: 400px;
+    transform: translate(96%) translateY(-980px);
+    box-shadow: 0 3px 25px 0 rgba(17, 17, 17, 0.25);
+  
+    &__title {
+      margin: 0;
+      margin-top: 56px;
+      margin-bottom: 20px;
+      padding: 0 50px;
+      font-size: 30px;
+      line-height: 40px;
+    }
+    
+    &__description {
+      margin-bottom: 35px;
+    }
+    
+    &__button {
+      margin: 0 20px;
+      margin-bottom: 48px;
+      width: 272px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-failur {
+    transform: translate(180%) translateY(-980px);
   }
 }

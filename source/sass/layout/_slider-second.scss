@@ -53,3 +53,44 @@
     text-align: center;
   }
 }
+
+@media (min-width: $tablet-width) {
+
+  .slider-second {
+    width: 768px;
+    background-size: 768px 389px;
+    background-position: 100% 100%;
+  
+    &__header {
+      margin-top: 290px;
+      padding: 0 120px;
+      padding-top: 75px;
+      border: none;
+    }
+    
+    &__title {
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .slider-second {
+    width: 1200px;
+    background-size: 1200px 540px;
+  
+    &__header {
+      margin-top: 300px;
+      padding: 0 340px;
+      padding-top: 75px;
+      padding-bottom: 39px;
+      border: none;
+    }
+    
+    &__title {
+      margin-top: 40px;
+    }
+  }
+}

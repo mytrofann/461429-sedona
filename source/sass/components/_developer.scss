@@ -36,3 +36,29 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+
+  .developer {
+    width: 196px;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+  
+    &__link {
+      margin: 0;
+      padding: 0;
+      padding-left: 7px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .developer {
+    width: 196px;
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 60px;
+  }
+}

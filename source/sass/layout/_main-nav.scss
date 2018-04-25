@@ -55,3 +55,29 @@
     }
   }
 }
+
+@media (min-width: $tablet-width) {
+
+  .main-nav {
+    width: auto;
+    margin: 0;
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+      width: 768px;
+      margin: 0 auto;
+    }
+
+    &__toggle {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .main-nav__wrapper {
+    width: 1200px;
+  }
+}
