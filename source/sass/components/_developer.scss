@@ -1,0 +1,64 @@
+.developer {
+  margin: 0;
+  padding: 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #fefefe;
+  
+  &__link {
+    margin: 0;
+    margin-top: 2px;
+    padding: 0;
+    padding-left: 75px;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+  
+  &__item {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+  
+    &::before {
+      content: "";
+      position: absolute;
+      top: -7px;
+      left: 102px;
+      width: 27px;
+      height: 34px;
+      background-image: url("../img/logo-htmlacademy.svg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .developer {
+    width: 196px;
+    margin: 0;
+    padding: 0;
+    padding-top: 10px;
+  
+    &__link {
+      margin: 0;
+      padding: 0;
+      padding-left: 7px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .developer {
+    width: 196px;
+    margin: 0;
+    padding-top: 10px;
+    padding-right: 60px;
+  }
+}

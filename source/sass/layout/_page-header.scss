@@ -1,0 +1,45 @@
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  box-sizing: border-box;
+  background-color: #ffffff;
+
+  &__logo {
+    margin: 0;
+    margin-left: 110px;
+    padding: 0;
+  
+    &-image {
+      width: 102px;
+      margin: 0;
+      padding: 0;
+      position: absolute;
+      background-color: transparent;
+      z-index: 10;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+
+  .page-header {
+    width: 768px;
+
+    &__logo {
+      margin-left: 333px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+
+  .page-header {
+    width: 1200px;
+
+    &__logo {
+      margin-left: 548px;
+    }
+  }
+}
