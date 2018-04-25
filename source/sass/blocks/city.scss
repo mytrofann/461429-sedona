@@ -74,6 +74,39 @@
     line-height: 26px;
     font-weight: 700;
     text-transform: uppercase;
+
+    &-accommodation {
+      position: absolute;
+      top: 24px;
+      left: 21px;
+      width: 39px;
+      height: 37px;
+      polygon {
+        fill: #81b3d2;
+      }
+    }
+
+    &-souvenirs {
+      position: absolute;
+      top: 153px;
+      left: 24px;
+      width: 32px;
+      height: 38px;
+      polygon {
+        fill: #81b3d2;
+      }
+    }
+
+    &-food {
+      position: absolute;
+      top: 271px;
+      left: 18px;
+      width: 40px;
+      height: 35px;
+      polygon {
+        fill: #81b3d2;
+      }
+    }
   }
   
   &__features-description {

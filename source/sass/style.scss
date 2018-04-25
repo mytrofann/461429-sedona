@@ -1,3 +1,6 @@
+@import "normalize.scss";
+@import "variables.scss";
+@import "scaffolding.scss";
 @import "blocks/developer.scss";
 @import "blocks/hashtag.scss";
 @import "blocks/main-nav.scss";
@@ -20,8 +23,5 @@
 @import "blocks/form-page-main.scss";
 @import "blocks/review.scss";
 @import "blocks/slider-third.scss";
-@import "blocks/fonts.scss";
 @import "blocks/modal-failur.scss";
 @import "blocks/modal-success.scss";
-@import "blocks/variables.scss";
-@import "blocks/scaffolding.scss";

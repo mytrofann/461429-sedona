@@ -9,6 +9,7 @@ body {
   color: #000000;
   font-style: normal;
   text-transform: none;
+  background-color: #000000;
 }
 
 a {
@@ -32,14 +33,53 @@ img {
   overflow: hidden;
 }
 
-.text-hide {
-  display: inline-block;
-  vertical-align: top;
-  width: 0;
-  height: 0;
-  text-indent: -500%;
-  white-space: nowrap;
-  overflow: hidden;
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: local('PTSans Regular'), local('PTSans-Regular'),
+    url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: local('PTSans Bold'), local('PTSans-Bold'),
+    url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
+}
+
+@media (min-width: $mobile-width-only) {
+
+  .main-nav--closed .site-list__item {
+    display: none;
+
+    &--active {
+      display: block;
+    }
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__wrapper {
+    position: static;
+    min-height: 0;
+  }
+
+  .main-nav--nojs .site-list__item {
+    display: block;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -54,13 +94,7 @@ img {
       padding: 0 20px;
     
       &-image {
-        width: 102px;
-        margin: 0 auto;
         margin-top: -62px;
-        padding: 0;
-        position: absolute;
-        background-color: transparent;
-        z-index: 1;
       }
     }
   }
@@ -69,21 +103,15 @@ img {
     width: 768px;
 
     &__toggle {
-      margin: 0;
-      padding: 0;
-      width: 0;
-      height: 0;
+      display: none;
     }
   }
 
   .site-list {
     width: 768px;
-    margin: 0 auto;
-    padding: 0 20px;
-    padding-top: 8px;
-    padding-bottom: 14px;
-    box-sizing: border-box;
-    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
     background-color: #ffffff;
 
     & a {
@@ -581,6 +609,7 @@ img {
   }
 }
 
+/*
 @media (min-width: $desktop-width) {
 
   body {
@@ -1123,3 +1152,4 @@ img {
     }
   }
 }
+*/

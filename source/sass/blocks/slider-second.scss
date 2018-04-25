@@ -4,11 +4,24 @@
   padding: 0;
   width: 320px;
   height: 320px;
+  position: relative;
   display: inline-block;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 330%;
   background-repeat: no-repeat;
   background-color: #ffffff;
+
+  &::before {
+    content: "";
+    top: 132px;
+    left: 0;
+    width: 320px;
+    height: 26px;
+    position: absolute;
+    background-image: url("../img/bg-intro-triangle-mobile.svg");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
 
   &__header {
     margin: 0;
