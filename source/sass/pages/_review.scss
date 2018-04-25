@@ -7,6 +7,10 @@
   flex-direction: column;
   background-color: #ffffff;
 
+  &__item ul {
+    list-style: none;
+  }
+
   &__input--radio + label::before {
     content: "";
     top: -20px;
