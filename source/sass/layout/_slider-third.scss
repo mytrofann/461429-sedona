@@ -62,7 +62,8 @@
     width: 768px;
     margin-bottom: 128px;
     background-size: 768px 389px;
-    background-position: 100% 120%;
+    background-image: url("../img/back-tablet.jpg");
+    background-position: 100% 260%;
   
     &__header {
       margin-top: 290px;
@@ -82,7 +83,9 @@
   .slider-third {
     width: 1200px;
     margin-bottom: 199px;
-    background-size: 1200px 540px;
+    background-size: 1200px 367px;
+    background-image: url("../img/back-desktop.jpg");
+    background-position: 100% 980%;
   
     &__header {
       margin: 0;
