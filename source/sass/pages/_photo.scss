@@ -79,6 +79,10 @@
     padding: 0 60px;
     padding-top: 70px;
   
+    &__item {
+      border-bottom: none;
+    }
+  
     &__list {
       margin: 0;
       padding: 0;
@@ -148,6 +152,16 @@
     }
   
     &__item:nth-child(n+2) {
+      width: 400px;
+    }
+  
+    &__image:nth-child(1) {
+      margin-bottom: 0;
+      width: 1200px;
+    }
+  
+    &__image:nth-child(n+2) {
+      margin-bottom: 0;
       width: 400px;
     }
   }

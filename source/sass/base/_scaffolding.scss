@@ -48,6 +48,14 @@ img {
   }
 }
 
+@media (min-width: $tablet-width) {
+
+  .main-nav--closed .site-list__item {
+    display: block;
+    margin-bottom: -60px;
+  }
+}
+
 @media (min-width: $desktop-width) {
 
   body {
