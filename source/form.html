@@ -37,11 +37,14 @@
     </nav>
 
     <section class="slider-third">
-      <div class="slider-third__header">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
+          <img class="slider-third__header" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="Мост дьявола">
+        </picture>
         <h1 class="slider-third__title">Оставьте свой отзыв</h1>
         <p class="slider-third__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
-      </div>
     </section>
   </header>
 
@@ -74,7 +77,7 @@
           <ul>
             <li class="review__option">
               <label for="tel">Контактный телефон*:</label>
-              <input type="tel" name="tel" id="tel" placeholder="Введите телефон" required>
+              <input type="tel" name="tel" id="tel" placeholder="Введите телефон" required pattern="[0-9]{10}">
             </li>
             <li class="review__option">
               <label for="email">Электронная почта*:</label>

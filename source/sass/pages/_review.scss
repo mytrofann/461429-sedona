@@ -346,6 +346,11 @@
   
     &__item {
       border-bottom: none;
+  
+      & input[type="text"] {
+        box-sizing: border-box;
+        width: 316px;
+      }
     }
   
     &__item::nth-child(3) {

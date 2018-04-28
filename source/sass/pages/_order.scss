@@ -39,11 +39,10 @@
   &__maps {
     width: 320px;
     height: 350px;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     display: block;
     position: relative;
-    background-image: url("../img/bg-map-mobile@1x.jpg");
     background-position: top center;
     background-repeat: no-repeat;
   }
@@ -54,11 +53,12 @@
     left: 145px;
     width: 27px;
     height: 27px;
-    display: inline-block;
+    display: block;
     position: absolute;
     background-image: url("../img/icon-map-marker.svg");
     background-position: top center;
     background-repeat: no-repeat;
+    z-index: 2;
   }
   
   &__button {
@@ -98,7 +98,6 @@
       height: 350px;
       display: block;
       position: relative;
-      background-image: url("../img/map-tablet.jpg");
       background-position: top center;
       background-repeat: no-repeat;
     }
@@ -137,7 +136,6 @@
   
     &__maps {
       width: 1200px;
-      background-image: url("../img/map-desktop.jpg");
     }
     
     &__button {

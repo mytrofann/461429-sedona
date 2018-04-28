@@ -6,14 +6,13 @@
   height: 320px;
   position: relative;
   display: inline-block;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: 50% 330%;
   background-repeat: no-repeat;
   background-color: #ffffff;
 
   &::before {
     content: "";
-    top: 132px;
+    top: 137px;
     left: 0;
     width: 320px;
     height: 26px;
@@ -25,9 +24,7 @@
 
   &__header {
     margin: 0;
-    margin-top: 158px;
-    padding: 0 20px;
-    padding-top: 38px;
+    padding: 0;
     background-color: #ffffff;
     border-bottom: 1px solid #e5e5e5;
   }
@@ -60,11 +57,17 @@
     width: 768px;
     background-size: 768px 389px;
     background-position: 100% 100%;
+
+    &::before {
+      top: 233px;
+      width: 768px;
+      height: 57px;
+      background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
   
     &__header {
-      margin-top: 290px;
-      padding: 0 120px;
-      padding-top: 75px;
+      margin: 0;
+      padding: 0;
       border: none;
     }
     
@@ -80,12 +83,16 @@
   .slider-second {
     width: 1200px;
     background-size: 1200px 540px;
+
+    &::before {
+      top: 243px;
+      width: 1200px;
+      background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
   
     &__header {
-      margin-top: 300px;
-      padding: 0 340px;
-      padding-top: 75px;
-      padding-bottom: 39px;
+      margin: 0;
+      padding: 0;
       border: none;
     }
     

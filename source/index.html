@@ -37,10 +37,13 @@
     </nav>
 
     <section class="slider">
-      <div class="slider-header">
-        <h1 class="slider__title">Седона – небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="slider__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-      </div>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/bg-back-desktop@1x.jpg 1x, img/bg-back-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-back-tablet@1x.jpg 1x, img/bg-back-tablet@2x.jpg 2x">
+        <img class="slider-header" src="img/bg-back-mobile@1x.jpg" srcset="img/bg-back-mobile@2x.jpg 2x" alt="Мост дьявола">
+      </picture>
+      <h1 class="slider__title">Седона – небольшой городок в Аризоне, заслуживающий большего!</h1>
+      <p class="slider__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
     </section>
   </header>
 
@@ -49,14 +52,14 @@
     <section class="city">
       <header class="city__header">
         <h2 class="city__title city__title--color">Настоящий городок</h2>
-        <span class="city__number city__number--color">- №1 -</span>
+        <span class="city__number city__number--color">— №1 —</span>
         <p class="city__description--color">Седона не аттракцион для туристов, там течет своя жизнь</p>
       </header>
       <picture>
-          <source media="(min-width: 1200px)" srcset="img/photo-city@1x.jpg 1x, img/photo-city@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/photo-city@1x.jpg 1x, img/photo-city@2x.jpg 2x">
-          <img class="city__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Мост дьявола">
-        </picture>
+        <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+        <img class="city__image" src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" alt="Мост дьявола">
+      </picture>
 
       <ul class="city__list">
         <li class="city__item">
@@ -117,29 +120,29 @@
     <section class="bridge">
       <header class="bridge__header">
         <h2 class="bridge__title bridge__title--color">Там есть мост дьявола</h2>
-        <span class="bridge__number--color">- №2 -</span>
+        <span class="bridge__number--color">— №2 —</span>
         <p class="bridge__description bridge__description--color">Да, по нему можно пройти! Если вы осмелитесь, конечно.</p>
       </header>
       <picture>
-          <source media="(min-width: 1200px)" srcset="img/photo-bridge@1x.jpg 1x, img/photo-bridge@2x.jpg 2x">
-          <source media="(min-width: 768px)" srcset="img/photo-bridge@1x.jpg 1x, img/photo-bridge@2x.jpg 2x">
-          <img class="bridge__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
-        </picture>
+        <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+        <img class="bridge__image" src="img/main-bridge-mobile@1x.jpg" srcset="img/main-bridge-mobile@2x.jpg 2x" alt="Мост дьявола">
+      </picture>
       <ul class="bridge__list">
         <li class="bridge__item">
           <h2 class="bridge__features">Небольшая площадь</h2>
-          <span class="bridge__number">- №3 -</span>
+          <span class="bridge__number">— №3 —</span>
           <p class="bridge__description">Все интересные места находятся очень близко</p>
         </li>
         <li class="bridge__item">
           <h2 class="bridge__features">Красивая дорога</h2>
-          <span class="bridge__number">- №4 -</span>
+          <span class="bridge__number">— №4 —</span>
           <p class="bridge__description">Ехать в Седону из Лас-Вегаса
             <br>совсем не скучно!</p>
         </li>
         <li class="bridge__item">
           <h2 class="bridge__features">Мало туристов</h2>
-          <span class="bridge__number">- №5 -</span>
+          <span class="bridge__number">— №5 —</span>
           <p class="bridge__description">Большенство едет в Гранд Каньон
             <br>и толпится там</p>
         </li>
@@ -152,7 +155,13 @@
         <p class="order__description">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="order__button button" href="#">Найти гостиницу</a>
       </header>
-      <div class="order__maps"></div>
+      <iframe class="order__interactive-map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1979097.27739121!2d-111.81369940087185!3d34.91729849106217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1524913027534"
+        width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.jpg 1x, img/bg-map-tablet@2x.jpg 2x">
+        <img class="order__maps" src="img/bg-map-mobile@1x.jpg" srcset="img/bg-map-mobile@2x.jpg 2x" alt="Мост дьявола">
+      </picture>
     </section>
 
   </main>

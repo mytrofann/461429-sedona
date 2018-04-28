@@ -6,6 +6,12 @@
   box-sizing: border-box;
   background-color: #ffffff;
 
+  &__image {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+
   &_wrapper {
     margin: 0;
     padding: 20px 40px;
@@ -38,6 +44,10 @@
     width: 768px;
     padding: 0 60px;
     padding-bottom: 135px;
+
+    &__image {
+      width: 648px;
+    }
   
     &_wrapper {
       padding: 20px 110px;
@@ -55,10 +65,15 @@
 
   .video {
     width: 1200px;
+    padding: 0 200px;
     margin-bottom: 293px;
+
+    &__image {
+      width: 800px;
+    }
   
     &_wrapper {
-      padding: 20px 310px;
+      padding: 20px 110px;
     }
   }
 }
