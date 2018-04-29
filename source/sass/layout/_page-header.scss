@@ -40,7 +40,12 @@
     width: 1200px;
 
     &__logo {
-      margin-left: 548px;
+      margin-left: 506px;
+  
+      &-image {
+        width: 187px;
+        height: 97px;
+      }
     }
   }
 }
