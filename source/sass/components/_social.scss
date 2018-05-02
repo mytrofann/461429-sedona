@@ -25,6 +25,18 @@
     height: 48px;
     background-color: #81b3d2;
 
+    &:hover {
+      background-color: #669ec0;
+    }
+
+    &:active {
+      background-color: #5496bd;
+    }
+
+    &:active path {
+      fill: #88b6d1;
+    }
+
     &-twitter {
       position: absolute;
       top: 17px;
@@ -70,6 +82,6 @@
 @media (min-width: $desktop-width) {
 
   .social__list {
-    padding-left: 75px;
+    padding-left: 76px;
   }
 }

@@ -6,13 +6,14 @@
   height: 320px;
   position: relative;
   display: inline-block;
-  background-position: 50% 330%;
-  background-repeat: no-repeat;
   background-color: #ffffff;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
 
   &::before {
     content: "";
-    top: 137px;
+    top: 131px;
     left: 0;
     width: 320px;
     height: 26px;
@@ -31,8 +32,10 @@
   
   &__title {
     margin: 0;
+    margin-top: 157px;
     margin-bottom: 25px;
     padding: 0;
+    padding-top: 38px;
     font-size: 18px;
     line-height: 26px;
     font-weight: 700;
@@ -42,7 +45,7 @@
   
   &__description {
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
     padding-bottom: 29px;
     font-size: 14px;
     line-height: 24px;
@@ -55,8 +58,7 @@
 
   .slider-second {
     width: 768px;
-    background-size: 768px 389px;
-    background-position: 100% 100%;
+    background-image: url("../img/bg-back-mobile@1x.jpg");
 
     &::before {
       top: 233px;
@@ -72,8 +74,14 @@
     }
     
     &__title {
+      margin-top: 290px;
       margin-bottom: 30px;
+      padding-top: 75px;
       font-size: 30px;
+    }
+  
+    &__description {
+      padding: 0 170px;
     }
   }
 }
@@ -82,10 +90,11 @@
 
   .slider-second {
     width: 1200px;
-    background-size: 1200px 540px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    margin-bottom: 198px;
 
     &::before {
-      top: 243px;
+      top: 244px;
       width: 1200px;
       background-image: url("../img/bg-intro-triangle-desktop.svg");
     }
@@ -97,7 +106,12 @@
     }
     
     &__title {
-      margin-top: 40px;
+      margin-top: 301px;
+      padding-top: 112px;
+    }
+  
+    &__description {
+      padding: 0 380px;
     }
   }
 }

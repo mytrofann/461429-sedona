@@ -5,12 +5,13 @@
   display: inline-block;
   position: relative;
   box-sizing: border-box;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 
   &::before {
     content: "";
-    top: 136px;
+    top: 363px;
     left: 0;
     width: 320px;
     height: 26px;
@@ -30,8 +31,8 @@
 
   &__title {
     margin: 0;
-    margin-top: 30px;
-    padding: 0;
+    margin-top: 430px;
+    padding: 0 30px;
     padding-bottom: 26px;
     font-size: 18px;
     line-height: 26px;
@@ -42,8 +43,8 @@
   
   &__description {
     margin: 0;
-    padding: 0;
-    padding-bottom: 43px;
+    padding: 0 20px;
+    padding-bottom: 4px;
     font-size: 14px;
     line-height: 26px;
     text-transform: uppercase;
@@ -55,10 +56,10 @@
 
   .slider {
     width: 768px;
-    background-size: 1068px 520px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
 
     &::before {
-      top: 463px;
+      top: 461px;
       width: 768px;
       height: 57px;
       background-image: url("../img/bg-intro-triangle-tablet.svg");
@@ -71,13 +72,15 @@
     }
   
     &__title {
+      margin-top: 568px;
       margin-bottom: 26px;
-      padding: 0 140px;
+      padding: 0 160px;
       font-size: 21px;
     }
     
     &__description {
       padding: 0 140px;
+      padding-bottom: 52px;
     }  
   }
 }
@@ -86,7 +89,7 @@
 
   .slider {
     width: 1200px;
-    background-size: 1200px 518px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
 
     &::before {
       top: 461px;
@@ -101,6 +104,7 @@
   
     &__title {
       margin: 0;
+      margin-top: 568px;
       margin-bottom: 28px;
       padding: 0 300px;
     }
@@ -108,6 +112,7 @@
     &__description {
       margin: 0;
       padding: 0 350px;
+      padding-bottom: 50px;
     }  
   }
 }
