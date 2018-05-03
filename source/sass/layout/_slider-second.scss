@@ -8,8 +8,12 @@
   display: inline-block;
   background-color: #ffffff;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: top center;
+  background-position: bottom center;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
 
   &::before {
     content: "";
@@ -23,6 +27,14 @@
     background-repeat: no-repeat;
   }
 
+  &__text-sedona-img {
+    display: block;
+    width: 229px;
+    height: 39px;
+    margin: 0 auto;
+    padding-top: 52px;
+  }
+
   &__header {
     margin: 0;
     padding: 0;
@@ -32,7 +44,7 @@
   
   &__title {
     margin: 0;
-    margin-top: 157px;
+    margin-top: 66px;
     margin-bottom: 25px;
     padding: 0;
     padding-top: 38px;
@@ -60,11 +72,21 @@
     width: 768px;
     background-image: url("../img/bg-back-mobile@1x.jpg");
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+    }
+
     &::before {
       top: 233px;
       width: 768px;
       height: 57px;
       background-image: url("../img/bg-intro-triangle-tablet.svg");
+    }
+
+    &__text-sedona-img {
+      width: 458px;
+      height: 78px;
+      padding-top: 95px;
     }
   
     &__header {
@@ -74,7 +96,7 @@
     }
     
     &__title {
-      margin-top: 290px;
+      margin-top: 117px;
       margin-bottom: 30px;
       padding-top: 75px;
       font-size: 30px;
@@ -93,10 +115,20 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
     margin-bottom: 198px;
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+
     &::before {
       top: 244px;
       width: 1200px;
       background-image: url("../img/bg-intro-triangle-desktop.svg");
+    }
+
+    &__text-sedona-img {
+      width: 461px;
+      height: 80px;
+      padding-top: 101px;
     }
   
     &__header {
@@ -106,7 +138,7 @@
     }
     
     &__title {
-      margin-top: 301px;
+      margin-top: 120px;
       padding-top: 112px;
     }
   
