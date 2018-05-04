@@ -78,9 +78,19 @@
   }
 
   &__replay {
-    position: absolute;
+    position: relative;
     left: 25px;
-    bottom: 24px;
+    bottom: -22px;
+    width: 16px;
+    height: 20px;
+    border: none;
+    background-color: #f2f2f2;
+  }
+
+  &__replay-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
     width: 16px;
     height: 20px;
     fill: #5c6870;
@@ -95,9 +105,19 @@
   }
 
   &__subtitles {
+    position: relative;
+    left: 154px;
+    bottom: -23px;
+    width: 32px;
+    height: 20px;
+    border: none;
+    background-color: #f2f2f2;
+  }
+
+  &__subtitles-img {
     position: absolute;
-    left: 174px;
-    bottom: 23px;
+    left: 0;
+    bottom: 0;
     width: 32px;
     height: 20px;
     fill: #5c6870;
@@ -112,12 +132,21 @@
   }
 
   &__fullscreen {
-    position: absolute;
-    left: 231px;
-    bottom: 23px;
-    width: 32px;
+    position: relative;
+    left: 182px;
+    bottom: -23px;
+    width: 20px;
     height: 20px;
-    fill: #5c6870;
+    border: none;
+    background-color: #f2f2f2;    
+  }
+
+  &__fullscreen-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
     fill: #5c6870;
 
     &:hover {
@@ -180,10 +209,14 @@
       height: 93px;
       background-color: #00000083;
     }
-  
+
     &__replay {
       left: 35px;
-      bottom: 37px;
+      bottom: -35px;
+      background-color: transparent;
+    }
+  
+    &__replay-img {
       fill: #ffffff;
   
       &:hover {
@@ -196,8 +229,12 @@
     }
 
     &__subtitles {
-      left: 524px;
-      bottom: 37px;
+      left: 505px;
+      bottom: -36px;
+      background-color: transparent;
+    }
+
+    &__subtitles-img {
       fill: #ffffff;
   
       &:hover {
@@ -210,8 +247,12 @@
     }
   
     &__fullscreen {
-      left: 581px;
-      bottom: 37px;
+      left: 532px;
+      bottom: -36px;
+      background-color: transparent;
+    }
+  
+    &__fullscreen-img {
       fill: #ffffff;
   
       &:hover {
@@ -258,29 +299,13 @@
       height: 93px;
       background-color: #00000083;
     }
-  
-    &__replay {
-      left: 34px;
-      bottom: 37px;
-      fill: #ffffff;
-  
-      &:hover {
-      fill: #c2c2c2;
-      }
-  
-      &:active {
-        fill: #949494;
-      }
-    }
 
     &__subtitles {
-      left: 674px;
-      bottom: 37px;
+      left: 655px;
     }
   
     &__fullscreen {
-      left: 731px;
-      bottom: 37px;
+      left: 683px;
     }
   }
 }

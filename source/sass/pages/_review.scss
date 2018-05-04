@@ -317,14 +317,70 @@
     width: 768px;
     padding: 0 40px;
     flex-direction: column;
+
+    &__input--radio + label::before {
+      top: -14px;
+    }
+    
+    &__input--radio:checked + label::after {
+      top: 4px;
+    }
+
+    &-filter {
+      display: flex;
+      flex-wrap: wrap;
+    }
   
     &__item {
       border-bottom: none;
+    }
+  
+    &__item:nth-child(1) {
+      width: 326px;
+      margin: 0;
+      padding: 0;
+      padding-right: 20px;
+      box-sizing: border-box;
+    }
+  
+    &__item:nth-child(2) {
+      margin: 0;
+      margin-top: 62px;
+    }
+  
+    &__item:nth-child(3) {
+      width: 326px;
+      margin: 0;
+      padding: 0;
+      padding-left: 20px;
+      box-sizing: border-box;
+      order: -1;
+      border-right: 1px solid #dbdbdb;
+    }
+  
+    &__item:nth-child(4) {
+      margin: 0;
+      padding-bottom: 45px;
+    }
+  
+    &__item:nth-child(5) {
+      margin: 0;
+      padding-top: 35px;
+      padding-bottom: 50px;
     }
     
     &__title {
       font-size: 21px;
       width: 320px;
+    }
+    
+    &__option:first-child {
+      padding-top: 60px;
+    }
+  
+    & input[type="text"] {
+      box-sizing: border-box;
+      width: 178px;
     }
     
     &__item input[type="tel"] {
@@ -337,30 +393,13 @@
       padding: 13px 20px 15px 20px;
     }
     
+    &__option-radio:first-child {
+      margin-top: 73px;
+    }
+    
     &__option-radio {
       width: 324px;
-      margin-top: 37px;
-      margin-bottom: 52px;
-    }
-    
-    &__list:first-child {
-      margin: 0;
-      padding: 0;
-      width: 324px;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      order: 2;
-    }
-    
-    &__list:nth-child(3) {
-      margin: 0;
-      padding: 0;
-      width: 324px;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      order: 1;
+      margin-bottom: 15px;
     }
     
     &__list:last-child {
@@ -371,9 +410,12 @@
       flex-wrap: wrap;
     }
 
+    &__option-checkbox:nth-child(-n+2) {
+      margin-top: 51px;
+    }
+
     &__option-checkbox {
       width: 220px;
-      margin-top: 30px;
       margin-bottom: 32px;
 
       &:nth-child(odd) {
@@ -408,6 +450,10 @@
       text-align: end;
       text-transform: uppercase;
     }    
+  }
+
+  .review__option:first-child .review__input {
+    width: 220px;
   }
 }
 
@@ -449,7 +495,7 @@
     &__list {
       justify-content: space-between;
     }
-    
+
     &__option-checkbox {
       width: 200px;
       margin-top: 30px;

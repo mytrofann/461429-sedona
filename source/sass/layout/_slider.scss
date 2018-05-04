@@ -8,6 +8,7 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: top center;
   background-repeat: no-repeat;
+  background-size: auto 389px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
@@ -69,6 +70,7 @@
   .slider {
     width: 768px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-size: auto 518px;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-tablet@2x.jpg");
