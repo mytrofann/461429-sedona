@@ -69,15 +69,15 @@
         <fieldset class="review__item">
           <legend class="review__title">Представьтесь:</legend>
           <ul class="review__list">
-            <li class="review__option">
+            <li class="review__option-name">
               <label for="name">Имя*:</label>
-              <input class="review__input" type="text" name="name" id="name" value="Петр" required>
+              <input class="review__input review__input--name" type="text" name="name" id="name" value="Петр" required>
             </li>
-            <li class="review__option">
+            <li class="review__option-name">
               <label for="surname">Фамилия*:</label>
               <input class="review__input" type="text" name="surname" id="surname" value="Иванов" required>
             </li>
-            <li class="review__option">
+            <li class="review__option-name">
               <label for="patronymic">Отчество:</label>
               <input class="review__input" type="text" name="patronymic" id="patronymic" value="Александрович">
             </li>
@@ -86,12 +86,12 @@
 
         <fieldset class="review__item">
           <legend class="review__title">Контактная информация:</legend>
-          <ul class="review__list">
-            <li class="review__option">
+          <ul class="review__list-contacts">
+            <li class="review__option-contacts">
               <label for="tel">Контактный телефон*:</label>
               <input type="tel" name="tel" id="tel" placeholder="Введите телефон" required pattern="[0-9]{10}">
             </li>
-            <li class="review__option">
+            <li class="review__option-contacts">
               <label for="email">Электронная почта*:</label>
               <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
             </li>
@@ -118,7 +118,7 @@
 
         <fieldset class="review__item">
           <legend class="review__title">Посещенные достопримечательности:</legend>
-          <ul class="review__list">
+          <ul class="review__list-checkbox">
             <li class="review__option-checkbox">
               <input class="visually-hidden review__input review__input--checkbox" type="checkbox" name="the-Devil's-bridge" id="the-Devil's-bridge"
                 checked>
@@ -141,7 +141,7 @@
 
         <fieldset class="review__item">
           <legend class="review__title">Опишите свои эмоции:</legend>
-          <p class="review__option">
+          <p class="review__option-description">
             <textarea name="text" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </p>
         </fieldset>

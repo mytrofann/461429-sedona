@@ -58,6 +58,12 @@
     cursor: pointer;
   }
 
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
   &__item {
     margin: 0;
     padding-left: 20px;
@@ -65,22 +71,19 @@
     border: none;
     border-bottom: 1px solid #e5e5e5;
 
-    & ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
+    &:nth-child(1) {
+      padding-bottom: 20px;
     }
 
     &:nth-child(2) {
-      margin-top: 15px;
+      margin-top: 20px;
       padding-top: 10px;
       position: relative;
     }
   
     &:nth-child(3) {
-      margin-top: 30px;
-      padding-top: 10px;
-      padding-bottom: 3px;
+      margin-top: 15px;
+      padding-bottom: 35px;
       position: relative;
     }
   
@@ -90,8 +93,7 @@
     }
   
     &:nth-child(5) {
-      margin-top: 20px;
-      margin-bottom: 22px;
+      margin-top: 17px;
       border: none;
     }
   
@@ -172,7 +174,7 @@
     text-align: center;
   }
 
-  &__option {
+  &__option-name {
     margin: 0;
     padding: 0;
     padding-top: 15px;
@@ -194,46 +196,97 @@
       line-height: 26px;
       font-weight: 700;
     }
+  }
+
+  &__list-contacts {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__option-contacts {
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-bottom: 5px;
   
-    &-radio {
-      margin-top: 37px;
-      margin-bottom: 40px;
+    & label {
+      margin: 0;
+      padding: 0;
+      padding-left: 20px;
+      font-size: 14px;
+      line-height: 26px;
+      text-transform: uppercase;
+    }
     
-      & label {
-        margin: 0;
-        padding: 0;
-        padding-left: 78px;
-        position: relative;
-        display: block;
-        cursor: pointer;
-        font-size: 18px;
-        line-height: 26px;
-        font-weight: 700;
-        text-transform: none;
-      }
+    & input {
+      margin: 0;
+      padding: 0;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 700;
+    }
+  }
+
+  &__option-radio {
+    margin: 0;
+    padding: 0;
+    padding-top: 32px;
+    padding-bottom: 10px;
+    
+    & label {
+      margin: 0;
+      padding: 0;
+      padding-left: 78px;
+      position: relative;
+      display: block;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 700;
+      text-transform: none;
+    }
+  }
+
+  &__list-checkbox {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  &__option-checkbox {
+    margin: 0;
+    padding: 0;
+    padding-top: 25px;
+    padding-bottom: 30px;
+
+    &:last-child {
+      padding-bottom: 0px;
     }
   
-    &-checkbox {
-      margin-top: 30px;
-      margin-bottom: 55px;
-    
-      & label {
-        margin: 0;
-        padding: 0;
-        padding-left: 78px;
-        position: relative;
-        display: block;
-        cursor: pointer;
-        font-size: 18px;
-        line-height: 26px;
-        font-weight: 700;
-        text-transform: none;
-      }
-    
-      &:last-child {
-        margin-bottom: 15px;
-      }
+    & label {
+      margin: 0;
+      padding: 0;
+      padding-left: 78px;
+      position: relative;
+      display: block;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 700;
+      text-transform: none;
     }
+  
+    &:last-child {
+      margin-bottom: 15px;
+    }
+  }
+
+  &__option-description {
+    margin: 0;
+    padding: 0;
+    padding-top: 12px;
+    padding-bottom: 16px;
   
     & textarea {
       box-sizing: border-box;
@@ -290,7 +343,7 @@
     display: none;
   }
 
-  .review__option:first-child .review__input {
+  .review__option-name:first-child .review__input {
     width: 230px;
     padding: 14px 15px 14px 20px;
   }
@@ -308,6 +361,10 @@
   
   .review__input--radio:active + label:active::after  {
     background-color: #a4a4a4;
+  }
+  
+  .review__input--checkbox:checked:active + label::after  {
+    opacity: 0.3;
   }
 }
 
@@ -333,90 +390,101 @@
   
     &__item {
       border-bottom: none;
-    }
   
-    &__item:nth-child(1) {
-      width: 326px;
-      margin: 0;
-      padding: 0;
-      padding-right: 20px;
-      box-sizing: border-box;
-    }
+      &:nth-child(1) {
+        width: 324px;
+        margin: 0;
+        padding: 0;
+        padding-left: 20px;
+        box-sizing: border-box;
+      }
   
-    &__item:nth-child(2) {
-      margin: 0;
-      margin-top: 62px;
-    }
-  
-    &__item:nth-child(3) {
-      width: 326px;
-      margin: 0;
-      padding: 0;
-      padding-left: 20px;
-      box-sizing: border-box;
-      order: -1;
-      border-right: 1px solid #dbdbdb;
-    }
-  
-    &__item:nth-child(4) {
-      margin: 0;
-      padding-bottom: 45px;
-    }
-  
-    &__item:nth-child(5) {
-      margin: 0;
-      padding-top: 35px;
-      padding-bottom: 50px;
-    }
+      &:nth-child(2) {
+        margin: 0;
+        margin-top: 65px;
+      }
     
-    &__title {
-      font-size: 21px;
-      width: 320px;
-    }
+      &:nth-child(3) {
+        width: 324px;
+        margin: 0;
+        padding: 0;
+        padding-right: 20px;
+        box-sizing: border-box;
+        order: -1;
+        border-right: 1px solid #dbdbdb;
+      }
     
-    &__option:first-child {
-      padding-top: 60px;
+      &:nth-child(4) {
+        width: 648px;
+        margin: 0;
+        margin-top: 20px;
+        padding-bottom: 45px;
+      }
+    
+      &:nth-child(5) {
+        margin: 0;
+        margin-top: 5px;
+        padding-top: 45px;
+        padding-bottom: 35px;
+      }
     }
   
     & input[type="text"] {
       box-sizing: border-box;
       width: 178px;
     }
-    
-    &__item input[type="tel"] {
+  
+    & input[type="tel"] {
       width: 648px;
       padding: 14px 20px 15px 20px;
     }
     
-    &__item input[type="email"] {
+    & input[type="email"] {
       width: 648px;
-      padding: 13px 20px 15px 20px;
+      padding: 14px 20px 15px 20px;
     }
     
-    &__option-radio:first-child {
-      margin-top: 73px;
+    &__title {
+      font-size: 21px;
+      width: 320px;
+    }
+
+    &__list-contacts {
+      margin: 0;
+      padding: 0;
+    }
+
+    &__option-contacts {
+      padding-top: 20px;
+      padding-bottom: 10px;
+      list-style: none;
     }
     
     &__option-radio {
-      width: 324px;
-      margin-bottom: 15px;
-    }
+      padding-left: 20px;
+      padding-bottom: 20px;
     
-    &__list:last-child {
+      &:first-child {
+        margin-top: 42px;
+      }
+    }
+
+    &__list-checkbox {
       margin: 0;
       padding: 0;
+      width: 648px;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
     }
 
-    &__option-checkbox:nth-child(-n+2) {
-      margin-top: 51px;
-    }
-
     &__option-checkbox {
       width: 220px;
-      margin-bottom: 32px;
+      padding-bottom: 35px;
+
+      &:nth-child(-n+2) {
+        margin-top: 25px;
+      }
 
       &:nth-child(odd) {
         margin-left: 96px;
@@ -429,14 +497,19 @@
       }
     }
     
-    &__option textarea {
-      width: 648px;
-      padding: 15px 20px 15px 20px;
+    &__option-description {
+      padding-bottom: 13px;
+
+      & textarea {
+        width: 648px;
+        padding: 15px 20px 15px 20px;
+      }
     }
     
     &__button {
       padding: 16px 30px;
       width: 323px;
+      margin-bottom: 60px;
     }
 
     &__required {
@@ -444,6 +517,7 @@
       width: 200px;
       margin: 0;
       padding: 0;
+      padding-top: 20px;
       padding-left: 100px;
       font-size: 14px;
       line-height: 26px;
@@ -452,8 +526,8 @@
     }    
   }
 
-  .review__option:first-child .review__input {
-    width: 220px;
+  .review__option-name:first-child .review__input {
+    width: 220px !important;
   }
 }
 
@@ -472,8 +546,16 @@
       }
     }
   
-    &__item::nth-child(3) {
-      order: 1;
+    &__item:nth-child(1) {
+      width: 500px;
+    }
+  
+    &__item:nth-child(3) {
+      width: 500px;
+    }
+  
+    &__item:nth-child(4) {
+      width: 960px;
     }
     
     &__item input[type="tel"] {
@@ -485,23 +567,36 @@
       width: 315px;
       padding: 13px 20px 15px 20px;
     }
-    
-    &__option-radio {
-      width: 324px;
-      margin-top: 37px;
-      margin-bottom: 52px;
+
+    &__list-contacts {
+      margin: 0;
+      padding: 0;
+      margin-top: 42px;
+      display: flex;
+
+      & label {
+        width: 150px;
+      }
     }
-    
-    &__list {
-      justify-content: space-between;
+
+    &__option-contacts {
+      display: flex;
+
+    }
+
+    &__list-checkbox {
+      width: 960px;
     }
 
     &__option-checkbox {
-      width: 200px;
-      margin-top: 30px;
-      margin-bottom: 55px;
+      width: 240px;
+      margin-top: 24px;
 
-      &:nth-child(2n+1) {
+      &:nth-child(-n+2) {
+        margin-top: 24px;
+      }
+
+      &:nth-child(odd) {
         margin-left: 0;
         box-sizing: border-box;
       }
@@ -512,13 +607,18 @@
       }
     }
     
-    &__option textarea {
+    &__option-description {
+      padding-bottom: 10px;
+      
+      & textarea {
       width: 962px;
       padding: 15px 20px 15px 20px;
     }
+  }
     
     &__button {
       width: 480px;
+      margin-bottom: 66px;
     }
 
     &__required {
