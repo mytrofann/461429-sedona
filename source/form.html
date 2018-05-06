@@ -66,82 +66,82 @@
       <h2 class="visually-hidden">Фильтр</h2>
       <form class="review-filter" method="post" action="https://echo.htmlacademy.ru">
 
-        <fieldset class="review__item">
-          <legend class="review__title">Представьтесь:</legend>
-          <ul class="review__list">
-            <li class="review__option-name">
+        <fieldset class="review__item review__item--introduce">
+          <legend class="review__title review__title--name">Представьтесь:</legend>
+          <ul class="review__list review__list--name">
+            <li class="review__option review__option--name">
               <label for="name">Имя*:</label>
               <input class="review__input review__input--name" type="text" name="name" id="name" value="Петр" required>
             </li>
-            <li class="review__option-name">
+            <li class="review__option review__option--name">
               <label for="surname">Фамилия*:</label>
               <input class="review__input" type="text" name="surname" id="surname" value="Иванов" required>
             </li>
-            <li class="review__option-name">
+            <li class="review__option review__option--name">
               <label for="patronymic">Отчество:</label>
               <input class="review__input" type="text" name="patronymic" id="patronymic" value="Александрович">
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="review__item">
-          <legend class="review__title">Контактная информация:</legend>
-          <ul class="review__list-contacts">
-            <li class="review__option-contacts">
+        <fieldset class="review__item review__item--contacts">
+          <legend class="review__title review__title--contacts">Контактная информация:</legend>
+          <ul class="review__list review__list--contacts">
+            <li class="review__option review__option--contacts">
               <label for="tel">Контактный телефон*:</label>
-              <input type="tel" name="tel" id="tel" placeholder="Введите телефон" required pattern="[0-9]{10}">
+              <input class="review__icon-tel" type="tel" name="tel" id="tel" placeholder="Введите телефон" required pattern="[0-9]{10}">
             </li>
-            <li class="review__option-contacts">
+            <li class="review__option review__option--contacts">
               <label for="email">Электронная почта*:</label>
-              <input type="email" name="email" id="email" placeholder="Введите e-mail" required>
+              <input class="review__icon-email" type="email" name="email" id="email" placeholder="Введите e-mail" required>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="review__item">
-          <legend class="review__title">Ваше общее впечатление:</legend>
-          <ul class="review__list">
-            <li class="review__option-radio">
+        <fieldset class="review__item review__item--radio">
+          <legend class="review__title review__title--radio">Ваше общее впечатление:</legend>
+          <ul class="review__list review__list--radio">
+            <li class="review__option review__option--radio">
               <input class="visually-hidden review__input review__input--radio" type="radio" name="impression" id="positively" checked>
               <label for="positively">Скорее положительное</label>
             </li>
-            <li class="review__option-radio">
+            <li class="review__option review__option--radio">
               <input class="visually-hidden review__input review__input--radio" type="radio" name="impression" id="negatively">
               <label for="negatively">Скорее отрицательное</label>
             </li>
-            <li class="review__option-radio">
+            <li class="review__option review__option--radio">
               <input class="visually-hidden review__input review__input--radio" type="radio" name="impression" id="difficult">
               <label for="difficult">Затрудняюсь ответить</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="review__item">
-          <legend class="review__title">Посещенные достопримечательности:</legend>
-          <ul class="review__list-checkbox">
-            <li class="review__option-checkbox">
+        <fieldset class="review__item review__item--checkbox">
+          <legend class="review__title review__title--checkbox">Посещенные достопримечательности:</legend>
+          <ul class="review__list review__list--checkbox">
+            <li class="review__option review__option--checkbox">
               <input class="visually-hidden review__input review__input--checkbox" type="checkbox" name="the-Devil's-bridge" id="the-Devil's-bridge"
                 checked>
               <label for="the-Devil's-bridge">Мост Дьявола</label>
             </li>
-            <li class="review__option-checkbox">
+            <li class="review__option review__option--checkbox">
               <input class="visually-hidden review__input review__input--checkbox" type="checkbox" name="mount-bell" id="mount-bell" checked>
               <label for="mount-bell">Гора-Колокол</label>
             </li>
-            <li class="review__option-checkbox">
+            <li class="review__option review__option--checkbox">
               <input class="visually-hidden review__input review__input--checkbox" type="checkbox" name="slide-park" id="slide-park" checked>
               <label for="slide-park">Слайд-парк</label>
             </li>
-            <li class="review__option-checkbox">
+            <li class="review__option review__option--checkbox">
               <input class="visually-hidden review__input review__input--checkbox" type="checkbox" name="red-rocks" id="red-rocks">
               <label for="red-rocks">Красные скалы</label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="review__item">
-          <legend class="review__title">Опишите свои эмоции:</legend>
-          <p class="review__option-description">
+        <fieldset class="review__item review__item--description">
+          <legend class="review__title review__title--description">Опишите свои эмоции:</legend>
+          <p class="review__option review__option--description">
             <textarea name="text" rows="5" placeholder="Опишите подробно все свои восторги"></textarea>
           </p>
         </fieldset>
