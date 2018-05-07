@@ -61,7 +61,21 @@
       }
   
       &:active {
-        color: #766357;
+        color: #b2b2b2;
+        background: none;
+      }
+    }
+
+    & a:not([href]) {
+      color: #766357;
+
+      &:hover {
+        color: #604e43;
+        background: none;
+      }
+  
+      &:active {
+        color: #d6d0cc;
         background: none;
       }
     }

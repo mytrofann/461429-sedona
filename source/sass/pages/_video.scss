@@ -2,9 +2,16 @@
   width: 320px;
   margin: 0 auto;
   padding: 0;
-  padding-bottom: 135px;
+  padding-bottom: 105px;
+  position: relative;
   box-sizing: border-box;
   background-color: #ffffff;
+
+  &__image {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
 
   &_wrapper {
     margin: 0;
@@ -13,7 +20,7 @@
 
   &__title {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     padding: 0;
     font-size: 18px;
     line-height: 26px;
@@ -25,10 +32,130 @@
   &__description {
     margin: 0;
     padding: 0;
+    margin-bottom: 16px;
     font-size: 14px;
     line-height: 24px;
     text-transform: uppercase;
     text-align: center;
+  }
+
+  &__scroll {
+    position: absolute;
+    left: 0;
+    bottom: 66px;
+    width: 280px;
+    height: 45px;
+    background-color: #0000008e;
+  }
+
+  &__scall {
+    position: absolute;
+    top: -23px;
+    left: 22px;
+    width: 233px;
+    border: 1px solid #ffffff44;
+  }
+
+  &__slider {
+    position: absolute;
+    top: -26px;
+    left: 58px;
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+
+  &__controls {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 20px;
+    bottom: 39px;
+    width: 280px;
+    height: 66px;
+    background-color: #f2f2f2;
+  }
+
+  &__replay {
+    position: relative;
+    left: 25px;
+    bottom: -22px;
+    width: 16px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__replay-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 16px;
+    height: 20px;
+    fill: #5c6870;
+
+    &:hover {
+    fill: #333333;
+    }
+
+    &:active {
+      fill: #b8b8b8;
+    }
+  }
+
+  &__subtitles {
+    position: relative;
+    left: 154px;
+    bottom: -23px;
+    width: 32px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+  }
+
+  &__subtitles-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 32px;
+    height: 20px;
+    fill: #5c6870;
+
+    &:hover {
+    fill: #333333;
+    }
+
+    &:active {
+      fill: #b8b8b8;
+    }
+  }
+
+  &__fullscreen {
+    position: relative;
+    left: 182px;
+    bottom: -23px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    background-color: transparent;   
+  }
+
+  &__fullscreen-img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 20px;
+    height: 20px;
+    fill: #5c6870;
+
+    &:hover {
+    fill: #333333;
+    }
+
+    &:active {
+      fill: #b8b8b8;
+    }
   }
 }
 
@@ -37,7 +164,11 @@
   .video {
     width: 768px;
     padding: 0 60px;
-    padding-bottom: 135px;
+    padding-bottom: 40px;
+
+    &__image {
+      width: 648px;
+    }
   
     &_wrapper {
       padding: 20px 110px;
@@ -48,6 +179,88 @@
       box-sizing: border-box;
       font-size: 30px;
     }
+
+    &__description {
+      margin: 0;
+      padding: 0;
+      margin-bottom: 54px;
+    }
+
+    &__scroll {
+      display: none;
+    }
+  
+    &__scall {
+      top: 45px;
+      left: 93px;
+      width: 387px;
+    }
+  
+    &__slider {
+      top: 42px;
+      left: 205px;
+    }
+
+    &__controls {
+      margin: 0 60px;
+      left: 0;
+      bottom: 39px;
+      width: 648px;
+      height: 93px;
+      background-color: #00000083;
+    }
+
+    &__replay {
+      left: 35px;
+      bottom: -35px;
+    }
+  
+    &__replay-img {
+      fill: #ffffff;
+  
+      &:hover {
+      fill: #c2c2c2;
+      }
+  
+      &:active {
+        fill: #949494;
+      }
+    }
+
+    &__subtitles {
+      left: 505px;
+      bottom: -36px;
+    }
+
+    &__subtitles-img {
+      fill: #ffffff;
+  
+      &:hover {
+      fill: #c2c2c2;
+      }
+  
+      &:active {
+        fill: #949494;
+      }
+    }
+  
+    &__fullscreen {
+      left: 532px;
+      bottom: -36px;
+      background-color: transparent;
+    }
+  
+    &__fullscreen-img {
+      fill: #ffffff;
+  
+      &:hover {
+      fill: #c2c2c2;
+      }
+  
+      &:active {
+        fill: #949494;
+      }
+    }
   }
 }
 
@@ -55,10 +268,42 @@
 
   .video {
     width: 1200px;
-    margin-bottom: 293px;
+    padding: 0 200px;
+    padding-bottom: 85px;
+
+    &__image {
+      width: 800px;
+    }
   
     &_wrapper {
-      padding: 20px 310px;
+      padding: 20px 110px;
+    }
+
+    &__description {
+      margin: 0;
+      margin-bottom: 51px;
+      padding: 0 102px;
+    }
+  
+    &__scall {
+      width: 537px;
+    }
+
+    &__controls {
+      margin: 0 200px;
+      left: 0;
+      bottom: 85px;
+      width: 800px;
+      height: 93px;
+      background-color: #00000083;
+    }
+
+    &__subtitles {
+      left: 655px;
+    }
+  
+    &__fullscreen {
+      left: 683px;
     }
   }
 }
