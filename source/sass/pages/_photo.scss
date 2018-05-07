@@ -1,3 +1,7 @@
+.sprite {
+  display: none;
+}
+
 .photo {
   width: 320px;
   margin: 0 auto;
@@ -193,10 +197,7 @@
     }
   
     &__like-img {
-      
-      path {
       fill: #ffffff;
-      }
     }
   }
 }
