@@ -606,11 +606,11 @@
     padding: 0 100px;
 
     &__icon-tel {
-      background-position: 210px center;
+      background-position: 275px center;
     }
   
     &__icon-email {
-      background-position: 258px center; 
+      background-position: 280px center; 
     }
   
     &__item {
@@ -675,6 +675,10 @@
       padding: 0;
       margin-top: 42px;
       display: flex;
+
+      & span {
+        display: none;
+      }
     }
 
     &__list--checkbox {
@@ -691,12 +695,18 @@
 
       & label {
         padding: 0;
+        padding-top: 25px;
+        padding-right: 15px;
       }
     }
 
     &__option--checkbox {
       width: 200px;
       margin-top: 24px;
+
+      &:nth-child(n+2):nth-child(-n+3) {
+        margin-left: 15px;
+      }
 
       &:nth-child(-n+2) {
         margin-top: 24px;
