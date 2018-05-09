@@ -2,9 +2,11 @@
   margin: 0 auto;
   padding: 0 20px;
   width: 320px;
-  transform: translate(50%) translateY(-970px);
+  left: 50%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%); 
   display: none;
-  position: absolute;
+  position: fixed;
   box-sizing: border-box;
   background-color: #ffffff;
   box-shadow: 0 1px 5px 0 rgba(17, 17, 17, 0.25);
@@ -55,7 +57,6 @@
   .modal-failur {
     padding: 0 42px;
     width: 400px;
-    transform: translate(96%) translateY(-980px);
     box-shadow: 0 3px 25px 0 rgba(17, 17, 17, 0.25);
   
     &__title {
@@ -76,11 +77,5 @@
       margin-bottom: 48px;
       width: 272px;
     }
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .modal-failur {
-    transform: translate(180%) translateY(-980px);
   }
 }
