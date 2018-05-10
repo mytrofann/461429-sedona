@@ -6,23 +6,24 @@
 @import 'base/fonts';
 @import 'base/scaffolding';
 
-@import 'layout/main-nav';
-@import 'layout/site-list';
-@import 'layout/page-header';
-@import 'layout/page-footer';
-@import 'layout/slider';
-@import 'layout/slider-second';
-@import 'layout/slider-third';
-@import 'layout/modal-failur';
-@import 'layout/modal-success';
-
-@import 'components/hashtag';
-@import 'components/social';
-@import 'components/developer';
-
-@import 'pages/city';
-@import 'pages/bridge';
-@import 'pages/order';
-@import 'pages/photo';
-@import 'pages/video';
-@import 'pages/review';
+@import 'blocks/main-nav';
+@import 'blocks/site-list';
+@import 'blocks/page-header';
+@import 'blocks/page-footer';
+@import 'blocks/slider';
+@import 'blocks/slider-second';
+@import 'blocks/slider-third';
+@import 'blocks/modal-failur';
+@import 'blocks/modal-success';
+@import 'blocks/hashtag';
+@import 'blocks/social';
+@import 'blocks/developer';
+@import 'blocks/city';
+@import 'blocks/bridge';
+@import 'blocks/order';
+@import 'blocks/photo';
+@import 'blocks/video';
+@import 'blocks/review';
+@import 'blocks/index-page-main';
+@import 'blocks/photo-page-main';
+@import 'blocks/form-page-main';

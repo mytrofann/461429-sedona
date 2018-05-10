@@ -23,20 +23,20 @@
     font-weight: 500;
     text-transform: uppercase;
 
+    &:hover svg {
+      fill: #81b3d2;
+    }
+
+    &:active svg{
+      fill: #b2b2b2;
+    }
+
     &-img {
       position: absolute;
       top: -4px;
       left: 197px;
       width: 27px;
       height: 34px;
-
-      &:hover {
-        fill: #81b3d2;
-      }
-
-      &:active {
-        fill: #b2b2b2;
-      }
     }
   }
 }
