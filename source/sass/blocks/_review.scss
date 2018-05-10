@@ -392,15 +392,15 @@
   }
 
   .review__input--checkbox:active + label:active::before,
-  .review__input--radio:active + label:active::before  {
+  .review__input--radio:active + label:active::before {
     background-color: #d5d5d5;
   }
 
-  .review__input--radio:active + label:active::after  {
+  .review__input--radio:active + label:active::after {
     background-color: #a4a4a4;
   }
 
-  .review__input--checkbox:checked:active + label::after  {
+  .review__input--checkbox:checked:active + label::after {
     opacity: 0.3;
   }
 }
@@ -734,7 +734,6 @@
         padding-right: 15px;
       }
     }
-
     &__option--checkbox {
       width: 200px;
       margin-top: 24px;
@@ -760,12 +759,12 @@
 
     &__option--description {
       padding-bottom: 10px;
-
+      
       & textarea {
-      width: 962px;
-      padding: 15px 20px 15px 20px;
+        width: 962px;
+        padding: 15px 20px 15px 20px;
+      }
     }
-  }
 
     &__button {
       width: 480px;
