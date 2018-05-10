@@ -31,7 +31,7 @@
     font-size: 14px;
     line-height: 21px;
     color:#000000;
-  
+
     &--color {
       padding-left: 110px;
       padding-bottom: 15px;
@@ -50,7 +50,7 @@
     line-height: 21px;
     text-transform: uppercase;
     text-align: center;
-  
+
     &--color {
       color: #ffffff;
     }
@@ -79,7 +79,7 @@
     padding-top: 26px;
     padding-bottom: 25px;
     border-bottom: 1px solid #d6d6d6;
-  
+
     &:last-child {
       border-bottom: none;
     }
@@ -116,7 +116,7 @@
     &__number {
       padding-left: 70px;
       padding-bottom: 22px;
-    
+
       &--color {
         padding-left: 70px;
         padding-bottom: 25px;
@@ -125,7 +125,7 @@
 
     &__description {
       padding: 0 15px;
-    }  
+    }
 
     &__title {
       padding: 0 20px;
@@ -134,7 +134,7 @@
       font-size: 21px;
       font-weight: 700;
     }
-  
+
     &__list {
       width: 768px;
       padding: 0 30px;
@@ -144,7 +144,7 @@
       justify-content: space-between;
       order: 3;
     }
-  
+
     &__item {
       padding-top: 45px;
       padding-bottom: 43px;
@@ -183,19 +183,19 @@
 
     &__number {
       padding-left: 130px;
-    
+
       &--color {
         padding-left: 100px;
         padding-bottom: 20px;
       }
     }
-  
+
     &__list {
       width: 1200px;
       padding: 0 35px;
       padding-bottom: 14px;
     }
-  
+
     &__item {
       margin: 0;
       padding-top: 45px;

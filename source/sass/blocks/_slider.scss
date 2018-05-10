@@ -53,7 +53,7 @@
     text-transform: uppercase;
     text-align: center;
   }
-  
+
   &__description {
     margin: 0;
     padding: 0 20px;
@@ -62,7 +62,7 @@
     line-height: 26px;
     text-transform: uppercase;
     text-align: center;
-  }  
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -94,18 +94,18 @@
       margin-bottom: 49px;
       padding: 0;
     }
-  
+
     &__title {
       margin-top: 141px;
       margin-bottom: 26px;
       padding: 0 160px;
       font-size: 21px;
     }
-    
+
     &__description {
       padding: 0 140px;
       padding-bottom: 52px;
-    }  
+    }
   }
 }
 
@@ -135,18 +135,18 @@
       margin-top: 0;
       margin-bottom: 49px;
     }
-  
+
     &__title {
       margin: 0;
       margin-top: 139px;
       margin-bottom: 28px;
       padding: 0 300px;
     }
-    
+
     &__description {
       margin: 0;
       padding: 0 350px;
       padding-bottom: 50px;
-    }  
+    }
   }
 }
