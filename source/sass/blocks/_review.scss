@@ -67,7 +67,7 @@
     height: 20px;
     position: absolute;
     background-color: #333333;
-    border-radius: 50%
+    border-radius: 50%;
   }
 
   &__input--checkbox + label::before {
@@ -301,10 +301,6 @@
     padding-top: 25px;
     padding-bottom: 30px;
 
-    &:last-child {
-      padding-bottom: 0px;
-    }
-
     & label {
       margin: 0;
       padding: 0;
@@ -367,12 +363,12 @@
     color: #ffffff;
 
     &:hover {
-    background-color: #669ec0;
+      background-color: #669ec0;
     }
 
     &:active {
       color: #88b6d1;
-    background-color: #5496bd;
+      background-color: #5496bd;
     }
 
     &:disabled {
@@ -395,8 +391,8 @@
     background-color: #e5e5e5;
   }
 
-  .review__input--checkbox:active + label:active:before,
-  .review__input--radio:active + label:active:before  {
+  .review__input--checkbox:active + label:active::before,
+  .review__input--radio:active + label:active::before  {
     background-color: #d5d5d5;
   }
 

@@ -20,7 +20,7 @@
     background-color: transparent;
   }
 
-  &--closed .main-nav__toggle:before {
+  &--closed .main-nav__toggle::before {
     content: "";
     position: absolute;
     top: 0;
