@@ -11,16 +11,40 @@
   flex-direction: column;
   background-color: #ffffff;
 
-  &__icon-tel {
-    background-image: url("../img/icon-phone.svg");
-    background-position: 240px center;
-    background-repeat: no-repeat;   
+  &__label-tel {
+    position: relative;
+  
+    &::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 222px;
+      width: 58px;
+      height: 58px;
+      background-color: #e6e6e6;
+      background-image: url("../img/icon-phone.svg");
+      background-position: center center;
+      background-repeat: no-repeat; 
+      z-index: 1;
+    }
   }
 
-  &__icon-email {
-    background-image: url("../img/icon-mail.svg");
-    background-position: 240px center;
-    background-repeat: no-repeat;   
+  &__label-email {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 222px;
+      width: 58px;
+      height: 58px;
+      background-color: #e6e6e6;
+      background-image: url("../img/icon-mail.svg");
+      background-position: center center;
+      background-repeat: no-repeat; 
+      z-index: 1; 
+    }
   }
 
   &__input--radio + label::before {
@@ -393,12 +417,18 @@
     padding: 0 40px;
     flex-direction: column;
 
-    &__icon-tel {
-      background-position: 610px center;
+    &__label-tel {
+    
+      &::after {
+        left: 590px;
+      }
     }
   
-    &__icon-email {
-      background-position: 610px center; 
+    &__label-email {
+  
+      &::after {
+        left: 590px;
+      }
     }
 
     &__input--radio + label::before {
@@ -496,12 +526,12 @@
   
     & input[type="tel"] {
       width: 648px;
-      padding: 14px 20px 15px 20px;
+      padding: 14px 60px 15px 20px;
     }
     
     & input[type="email"] {
       width: 648px;
-      padding: 14px 20px 15px 20px;
+      padding: 14px 60px 15px 20px;
     }
     
     &__title {
@@ -609,12 +639,20 @@
     width: 1200px;
     padding: 0 100px;
 
-    &__icon-tel {
-      background-position: 275px center;
+    &__label-tel {
+    
+      &::after {
+        top: 8px;
+        left: 341px;
+      }
     }
   
-    &__icon-email {
-      background-position: 280px center; 
+    &__label-email {
+  
+      &::after {
+        top: 8px;
+        left: 419px;
+      }
     }
   
     &__item {
@@ -627,12 +665,12 @@
     
       & input[type="tel"] {
         width: 315px;
-        padding: 14px 20px 15px 20px;
+        padding: 14px 60px 15px 20px;
       }
       
       & input[type="email"] {
         width: 315px;
-        padding: 13px 20px 15px 20px;
+        padding: 13px 60px 15px 20px;
       }
 
       &--introduce {
@@ -694,7 +732,7 @@
       display: flex;
 
       &:first-child {
-        padding-right: 80px;
+        padding-right: 83px;
       }
 
       & label {
