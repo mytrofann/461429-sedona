@@ -5,7 +5,7 @@
   display: flex;
   flex-wrap: wrap;
   background-color: #fefefe;
-  
+
   &__link {
     margin: 0;
     padding: 0;
@@ -14,7 +14,7 @@
     line-height: 26px;
     text-transform: uppercase;
   }
-  
+
   &__item {
     margin: 0;
     padding: 0;
@@ -27,7 +27,7 @@
       fill: #81b3d2;
     }
 
-    &:active svg{
+    &:active svg {
       fill: #b2b2b2;
     }
 
@@ -42,13 +42,12 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .developer {
     width: 196px;
     margin: 0;
     padding: 0;
     padding-top: 10px;
-  
+
     &__link {
       padding-left: 8px;
     }
@@ -61,7 +60,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .developer {
     width: 196px;
     margin: 0;

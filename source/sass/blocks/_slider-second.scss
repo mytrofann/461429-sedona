@@ -41,7 +41,7 @@
     background-color: #ffffff;
     border-bottom: 1px solid #e5e5e5;
   }
-  
+
   &__title {
     margin: 0;
     margin-top: 66px;
@@ -54,7 +54,7 @@
     text-transform: uppercase;
     text-align: center;
   }
-  
+
   &__description {
     margin: 0;
     padding: 0 20px;
@@ -67,7 +67,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .slider-second {
     width: 768px;
     background-image: url("../img/bg-back-mobile@1x.jpg");
@@ -88,20 +87,20 @@
       height: 78px;
       padding-top: 95px;
     }
-  
+
     &__header {
       margin: 0;
       padding: 0;
       border: none;
     }
-    
+
     &__title {
       margin-top: 117px;
       margin-bottom: 30px;
       padding-top: 75px;
       font-size: 30px;
     }
-  
+
     &__description {
       padding: 0 170px;
     }
@@ -109,7 +108,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .slider-second {
     width: 1200px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
@@ -130,18 +128,18 @@
       height: 80px;
       padding-top: 101px;
     }
-  
+
     &__header {
       margin: 0;
       padding: 0;
       border: none;
     }
-    
+
     &__title {
       margin-top: 120px;
       padding-top: 112px;
     }
-  
+
     &__description {
       padding: 0 380px;
     }

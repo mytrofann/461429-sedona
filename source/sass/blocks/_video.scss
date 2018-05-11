@@ -96,7 +96,7 @@
     fill: #5c6870;
 
     &:hover {
-    fill: #333333;
+      fill: #333333;
     }
 
     &:active {
@@ -123,7 +123,7 @@
     fill: #5c6870;
 
     &:hover {
-    fill: #333333;
+      fill: #333333;
     }
 
     &:active {
@@ -138,7 +138,7 @@
     width: 20px;
     height: 20px;
     border: none;
-    background-color: transparent;   
+    background-color: transparent;
   }
 
   &__fullscreen-img {
@@ -150,7 +150,7 @@
     fill: #5c6870;
 
     &:hover {
-    fill: #333333;
+      fill: #333333;
     }
 
     &:active {
@@ -160,7 +160,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .video {
     width: 768px;
     padding: 0 60px;
@@ -169,11 +168,11 @@
     &__image {
       width: 648px;
     }
-  
+
     &_wrapper {
       padding: 20px 110px;
     }
-  
+
     &__title {
       margin-bottom: 30px;
       box-sizing: border-box;
@@ -189,13 +188,13 @@
     &__scroll {
       display: none;
     }
-  
+
     &__scall {
       top: 45px;
       left: 93px;
       width: 387px;
     }
-  
+
     &__slider {
       top: 42px;
       left: 205px;
@@ -214,14 +213,14 @@
       left: 35px;
       bottom: -35px;
     }
-  
+
     &__replay-img {
       fill: #ffffff;
-  
+
       &:hover {
-      fill: #c2c2c2;
+        fill: #c2c2c2;
       }
-  
+
       &:active {
         fill: #949494;
       }
@@ -234,29 +233,29 @@
 
     &__subtitles-img {
       fill: #ffffff;
-  
+
       &:hover {
-      fill: #c2c2c2;
+        fill: #c2c2c2;
       }
-  
+
       &:active {
         fill: #949494;
       }
     }
-  
+
     &__fullscreen {
       left: 532px;
       bottom: -36px;
       background-color: transparent;
     }
-  
+
     &__fullscreen-img {
       fill: #ffffff;
-  
+
       &:hover {
-      fill: #c2c2c2;
+        fill: #c2c2c2;
       }
-  
+
       &:active {
         fill: #949494;
       }
@@ -265,7 +264,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .video {
     width: 1200px;
     padding: 0 200px;
@@ -274,7 +272,7 @@
     &__image {
       width: 800px;
     }
-  
+
     &_wrapper {
       padding: 20px 110px;
     }
@@ -284,7 +282,7 @@
       margin-bottom: 51px;
       padding: 0 102px;
     }
-  
+
     &__scall {
       width: 537px;
     }
@@ -301,7 +299,7 @@
     &__subtitles {
       left: 655px;
     }
-  
+
     &__fullscreen {
       left: 683px;
     }

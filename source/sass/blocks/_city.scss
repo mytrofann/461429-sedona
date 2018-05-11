@@ -25,7 +25,7 @@
     display: inline-block;
     background-color: #81b3d2;
   }
-  
+
   &__title {
     margin: 0;
     padding: 0;
@@ -38,7 +38,7 @@
     color: #ffffff;
     text-align: center;
   }
-  
+
   &__number {
     padding-left: 110px;
     padding-bottom: 2px;
@@ -48,7 +48,7 @@
     color: #ffffff;
     text-align: center;
   }
-  
+
   &__image {
     width: 320px;
     height: 260px;
@@ -57,7 +57,7 @@
     background-position: top center;
     background-repeat: no-repeat;
   }
-  
+
   &__list {
     margin: 0;
     padding: 20px;
@@ -68,17 +68,17 @@
     list-style: none;
     background-color: #ffffff;
   }
-  
+
   &__item {
     margin: 0;
     padding: 0;
     padding-bottom: 29px;
   }
-  
+
   &__item:last-child {
     padding-bottom: 18px;
   }
-  
+
   &__features {
     margin: 0;
     padding: 0;
@@ -116,7 +116,7 @@
       fill: #81b3d2;
     }
   }
-  
+
   &__features-description {
     margin: 0;
     padding: 0;
@@ -124,7 +124,7 @@
     line-height: 21px;
     text-transform: uppercase;
   }
-  
+
   &__description--color {
     margin-bottom: 24px;
     color: #ffffff;
@@ -136,7 +136,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .city {
     width: 768px;
     flex-direction: row;
@@ -151,20 +150,20 @@
       width: 256px;
       box-sizing: border-box;
     }
-  
+
     &__title {
       padding: 5px 20px;
       display: inline-block;
       font-size: 21px;
       font-weight: 700;
     }
-  
+
     &__number {
       padding-top: 6px;
       padding-left: 80px;
       padding-bottom: 21px;
     }
-    
+
     &__image {
       width: 512px;
       height: 256px;
@@ -172,7 +171,7 @@
       background-position: top center;
       background-repeat: no-repeat;
     }
-    
+
     &__list {
       width: 768px;
       padding: 0 45px;
@@ -182,20 +181,19 @@
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      
     }
-    
+
     &__item {
       width: 170px;
       margin: 0;
       padding: 0;
       text-align: center;
-    
+
       &:nth-child(2) {
         order: 3;
       }
     }
-  
+
     &__features {
       padding-bottom: 22px;
       font-size: 21px;
@@ -207,14 +205,14 @@
         width: 75px;
         height: 72px;
       }
-  
+
       &-souvenirs {
         top: 59px;
         left: 597px;
         width: 85px;
         height: 75px;
       }
-  
+
       &-food {
         top: 60px;
         left: 346px;
@@ -222,7 +220,7 @@
         height: 75px;
       }
     }
-  
+
     &__description--color {
       margin: 0;
       padding: 0 25px;
@@ -231,55 +229,53 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .city {
     width: 1200px;
 
     &__header {
       width: 400px;
     }
-  
+
     &__title {
       padding: 12px 80px;
       padding-bottom: 4px;
     }
-  
+
     &__number {
       padding-top: 6px;
       padding-left: 150px;
       padding-bottom: 21px;
     }
-    
+
     &__image {
       width: 800px;
     }
-    
+
     &__list {
       width: 1200px;
       padding: 0 60px;
       padding-top: 160px;
       padding-bottom: 62px;
     }
-    
+
     &__item {
       width: 270px;
     }
-  
-    &__features {
 
+    &__features {
       &-accommodation {
         left: 160px;
       }
-  
+
       &-souvenirs {
         left: 956px;
       }
-  
+
       &-food {
         left: 562px;
       }
     }
-  
+
     &__description--color {
       padding: 0 40px;
     }

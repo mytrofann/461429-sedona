@@ -14,7 +14,7 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   &__title {
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@
     text-transform: uppercase;
     text-align: center;
   }
-  
+
   &__description {
     margin: 0;
     padding: 0;
@@ -41,7 +41,7 @@
     margin: 0;
     padding: 0;
     width: 320px;
-  
+
     &::before {
       content: "";
       top: 161px;
@@ -56,7 +56,7 @@
       z-index: 2;
     }
   }
-  
+
   &__map {
     width: 320px;
     height: 350px;
@@ -75,7 +75,7 @@
       z-index: 1;
     }
   }
-  
+
   &__button {
     margin: 0;
     margin-bottom: 20px;
@@ -91,12 +91,12 @@
     color: #ffffff;
 
     &:hover {
-    background-color: #669ec0;
+      background-color: #669ec0;
     }
 
     &:active {
       color: #88b6d1;
-    background-color: #5496bd;
+      background-color: #5496bd;
     }
 
     &:disabled {
@@ -106,16 +106,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  
   .order {
     width: 768px;
-  
+
     &__title {
       padding-top: 26px;
       padding-bottom: 30px;
       font-size: 30px;
     }
-  
+
     &__description {
       padding: 0 165px;
       margin-bottom: 42px;
@@ -123,7 +122,7 @@
 
     &__maps-wrapper {
       width: 768px;
-  
+
       &::before {
         content: "";
         top: 164px;
@@ -137,7 +136,7 @@
         background-repeat: no-repeat;
       }
     }
-  
+
     &__map {
       width: 768px;
       height: 350px;
@@ -146,7 +145,7 @@
       background-position: top center;
       background-repeat: no-repeat;
     }
-    
+
     &__button {
       margin: 0 135px;
       margin-bottom: 29px;
@@ -157,10 +156,9 @@
 }
 
 @media (min-width: $desktop-width) {
-  
   .order {
     width: 1200px;
-  
+
     &__description {
       padding: 0 381px;
       margin-bottom: 47px;
@@ -168,17 +166,17 @@
 
     &__maps-wrapper {
       width: 1200px;
-  
+
       &::before {
         top: 164px;
         left: 586px;
       }
     }
-  
+
     &__map {
       width: 1200px;
     }
-    
+
     &__button {
       margin: 0 350px;
       margin-bottom: 37px;

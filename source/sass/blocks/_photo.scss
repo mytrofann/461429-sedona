@@ -14,12 +14,12 @@
     margin: 0;
     padding: 0;
   }
-  
+
   &__original {
     margin: 0;
     padding: 0;
   }
-  
+
   &__list {
     margin: 0;
     padding: 0;
@@ -28,7 +28,7 @@
     align-items: center;
     list-style: none;
   }
-  
+
   &__item {
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: column;
   }
-  
+
   &__image {
     width: 280px;
     display: block;
@@ -50,7 +50,7 @@
     flex-direction: column;
     justify-content: space-between;
   }
-  
+
   &__title {
     margin: 0;
     padding: 0;
@@ -61,7 +61,7 @@
     font-weight: 700;
     text-transform: uppercase;
   }
-  
+
   &__author {
     margin: 0;
     padding: 0;
@@ -69,7 +69,7 @@
     font-size: 14px;
     line-height: 24px;
   }
-  
+
   &__like {
     margin: 0;
     padding: 0;
@@ -92,18 +92,17 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .photo {
     width: 768px;
     padding: 0 60px;
     padding-top: 70px;
     padding-bottom: 46px;
-  
+
     &__item {
       padding: 0;
       border-bottom: none;
     }
-  
+
     &__list {
       margin: 0;
       padding: 0;
@@ -128,25 +127,25 @@
       width: 648px;
       box-sizing: border-box;
       background-color: #f2f2f2;
-    }  
+    }
 
     &__title-author-like-wrapper {
       flex-direction: row;
       padding-bottom: 7px;
     }
-  
+
     &__title {
       margin: 0;
       padding-left: 20px;
     }
-    
+
     &__author {
       margin: 0;
       padding: 0;
       padding-left: 20px;
       padding-bottom: 10px;
     }
-  
+
     &__like {
       margin-right: 30px;
       padding-top: 30px;
@@ -160,21 +159,20 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .photo {
     width: 1200px;
     padding: 0;
     padding-top: 70px;
     padding-bottom: 51px;
-  
+
     &__item-wrapper {
       position: relative;
     }
-  
+
     &__item:nth-child(1) {
       width: 1200px;
     }
-  
+
     &__item:nth-child(n+2) {
       width: 400px;
     }
@@ -195,7 +193,7 @@
       left: 0;
       background: #0000003f;
     }
-  
+
     &__like-img {
       fill: #ffffff;
     }

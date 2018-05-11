@@ -10,7 +10,7 @@
     margin: 0;
     margin-left: 110px;
     padding: 0;
-  
+
     &-image {
       width: 102px;
       height: 83px;
@@ -24,7 +24,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .page-header {
     width: 768px;
 
@@ -35,13 +34,12 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .page-header {
     width: 1200px;
 
     &__logo {
       margin-left: 506px;
-  
+
       &-image {
         width: 187px;
         height: 97px;

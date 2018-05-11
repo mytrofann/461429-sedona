@@ -12,12 +12,12 @@
     flex-wrap: wrap;
     list-style: none;
   }
-  
+
   &__item {
     margin-left: 6px;
     padding-bottom: 20px;
   }
-  
+
   &__link {
     position: relative;
     display: inline-block;
@@ -45,7 +45,7 @@
       height: 14.663px;
       fill: #ffffff;
     }
-  
+
     &-facebook {
       position: absolute;
       top: 13px;
@@ -54,7 +54,7 @@
       height: 18.944px;
       fill: #ffffff;
     }
-    
+
     &-youtube {
       position: absolute;
       top: 17px;
@@ -67,12 +67,11 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .social {
     width: 256px;
     margin: 0;
     padding: 0;
-    
+
     &__list {
       padding-left: 47px;
     }
@@ -80,7 +79,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .social__list {
     padding-left: 76px;
   }

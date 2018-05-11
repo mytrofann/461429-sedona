@@ -4,13 +4,12 @@
   width: 320px;
   left: 50%;
   top: 50%;
-  transform: translateY(-50%) translateX(-50%); 
+  transform: translateY(-50%) translateX(-50%);
   display: none;
   position: fixed;
   box-sizing: border-box;
   background-color: #ffffff;
   box-shadow: 0 1px 5px 0 rgba(17, 17, 17, 0.25);
-  background-color: #ffffff;
   z-index: 3;
 
   &__title {
@@ -24,7 +23,7 @@
     text-transform: uppercase;
     text-align: center;
   }
-  
+
   &__description {
     margin: 0;
     margin-bottom: 30px;
@@ -34,7 +33,7 @@
     text-transform: uppercase;
     text-align: center;
   }
-  
+
   &__button {
     margin: 0 51px;
     margin-bottom: 30px;
@@ -58,7 +57,7 @@
     padding: 0 42px;
     width: 400px;
     box-shadow: 0 3px 25px 0 rgba(17, 17, 17, 0.25);
-  
+
     &__title {
       margin: 0;
       margin-top: 56px;
@@ -67,11 +66,11 @@
       font-size: 30px;
       line-height: 40px;
     }
-    
+
     &__description {
       margin-bottom: 35px;
     }
-    
+
     &__button {
       margin: 0 20px;
       margin-bottom: 48px;
