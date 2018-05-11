@@ -380,14 +380,14 @@
     display: none;
   }
 
-  .review__option--name:first-child .review__input {
+  &__option--name:first-child .review__input {
     width: 230px;
     padding: 14px 15px 14px 20px;
   }
 
   .review__input--checkbox:hover + label:hover::before,
   .review__input--checkbox:checked:hover + label:hover::after,
-  .review__input--radio:hover + label:hover::before, {
+  .review__input--radio:hover + label:hover::before {
     background-color: #e5e5e5;
   }
 
@@ -412,14 +412,12 @@
     flex-direction: column;
 
     &__label-tel {
-
       &::after {
         left: 590px;
       }
     }
 
     &__label-email {
-
       &::after {
         left: 590px;
       }
@@ -623,7 +621,7 @@
   }
 
   .review__option--name:first-child .review__input {
-    width: 220px !important;
+    width: 220px;
   }
 }
 
@@ -633,7 +631,6 @@
     padding: 0 100px;
 
     &__label-tel {
-
       &::after {
         top: 8px;
         left: 341px;
@@ -641,7 +638,6 @@
     }
 
     &__label-email {
-
       &::after {
         top: 8px;
         left: 419px;
@@ -734,6 +730,7 @@
         padding-right: 15px;
       }
     }
+
     &__option--checkbox {
       width: 200px;
       margin-top: 24px;
@@ -759,6 +756,7 @@
 
     &__option--description {
       padding-bottom: 10px;
+
       & textarea {
         width: 962px;
         padding: 15px 20px 15px 20px;
@@ -776,6 +774,6 @@
   }
 
   .review__option--name:first-child .review__input {
-    width: 350px !important;
+    width: 350px;
   }
 }
