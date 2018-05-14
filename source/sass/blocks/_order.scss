@@ -64,6 +64,7 @@
     padding: 0;
     display: block;
     position: relative;
+    background-color: #ffffff;
     background-position: top center;
     background-repeat: no-repeat;
 
@@ -116,8 +117,9 @@
     }
 
     &__description {
-      padding: 0 165px;
+      padding: 0 145px;
       margin-bottom: 42px;
+      text-align: center;
     }
 
     &__maps-wrapper {

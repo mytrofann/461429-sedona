@@ -8,7 +8,7 @@
   <meta name="format-detection" content="telephone=no">
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="photo-page">
@@ -93,7 +93,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Мост дьявола">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Мост дьявола">
           </picture>
         </a>
         <button class="main-nav__toggle" type="button">
@@ -165,8 +165,8 @@
                   <b class="photo__title">Местная растительность</b>
                   <p class="photo__author">Автор фото: Сергей</p>
                 </div>
-                <span class="photo__like">
-                  <svg class="photo__like-img" width="22px" height="20px">
+                <span class="photo__like photo__like--main">
+                  <svg class="photo__like-img photo__like-img--main" width="22px" height="20px">
                     <use xlink:href="#like-img"></use>
                   </svg>
                   143</span>

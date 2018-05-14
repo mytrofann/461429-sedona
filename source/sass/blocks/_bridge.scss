@@ -54,6 +54,14 @@
     &--color {
       color: #ffffff;
     }
+
+    &--road {
+      padding: 0 20px;
+    }
+
+    &--tourist {
+      padding: 0 15px;
+    }
   }
 
   &__image {
@@ -124,6 +132,11 @@
 
     &__description {
       padding: 0 15px;
+
+      &--road {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
     }
 
     &__title {
@@ -208,6 +221,18 @@
     &__features {
       padding: 0 90px;
       padding-bottom: 10px;
+
+      &--areas {
+        padding-left: 100px;
+      }
+
+      &--road {
+        padding-left: 90px;
+      }
+
+      &--tourist {
+        padding-left: 80px;
+      }
     }
   }
 }

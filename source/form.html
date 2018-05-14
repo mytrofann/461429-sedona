@@ -8,7 +8,7 @@
   <meta name="format-detection" content="telephone=no">
   <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="form-page">
@@ -71,7 +71,7 @@
           <picture>
             <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
             <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" alt="Мост дьявола">
+            <img class="page-header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Мост дьявола">
           </picture>
         </a>
         <button class="main-nav__toggle" type="button">
@@ -104,15 +104,15 @@
             <ul class="review__list review__list--name">
               <li class="review__option review__option--name">
                 <label for="name">Имя*:</label>
-                <input class="review__input review__input--name" type="text" name="name" id="name" value="Петр" required>
+                <input class="review__input review__input--name" type="text" name="name" id="name" placeholder="Петр" required>
               </li>
               <li class="review__option review__option--name">
                 <label for="surname">Фамилия*:</label>
-                <input class="review__input" type="text" name="surname" id="surname" value="Иванов" required>
+                <input class="review__input" type="text" name="surname" id="surname" placeholder="Иванов" required>
               </li>
               <li class="review__option review__option--name">
                 <label for="patronymic">Отчество:</label>
-                <input class="review__input" type="text" name="patronymic" id="patronymic" value="Александрович">
+                <input class="review__input" type="text" name="patronymic" id="patronymic" placeholder="Александрович">
               </li>
             </ul>
           </fieldset>
