@@ -3,68 +3,68 @@
   margin: 0;
   padding: 0;
   padding-left: 20px;
+}
 
-  &__list {
-    margin: 0;
-    margin-bottom: 18px;
-    padding: 0;
-    padding-left: 58px;
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
+.social__list {
+  margin: 0;
+  margin-bottom: 18px;
+  padding: 0;
+  padding-left: 58px;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.social__item {
+  margin-left: 6px;
+  padding-bottom: 20px;
+}
+
+.social__link {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
   }
 
-  &__item {
-    margin-left: 6px;
-    padding-bottom: 20px;
+  &:active {
+    background-color: #5496bd;
   }
 
-  &__link {
-    position: relative;
-    display: inline-block;
-    width: 46px;
-    height: 48px;
-    background-color: #81b3d2;
-
-    &:hover {
-      background-color: #669ec0;
-    }
-
-    &:active {
-      background-color: #5496bd;
-    }
-
-    &:active svg {
-      fill: #88b6d1;
-    }
-
-    &-twitter {
-      position: absolute;
-      top: 17px;
-      left: 14px;
-      width: 17.5px;
-      height: 14.663px;
-      fill: #ffffff;
-    }
-
-    &-facebook {
-      position: absolute;
-      top: 13px;
-      left: 19px;
-      width: 8.672px;
-      height: 18.944px;
-      fill: #ffffff;
-    }
-
-    &-youtube {
-      position: absolute;
-      top: 17px;
-      left: 14px;
-      width: 19.979px;
-      height: 14.015px;
-      fill: #ffffff;
-    }
+  &:active svg {
+    fill: #88b6d1;
   }
+}
+
+.social__link-twitter {
+  position: absolute;
+  top: 17px;
+  left: 14px;
+  width: 17.5px;
+  height: 14.663px;
+  fill: #ffffff;
+}
+
+.social__link-facebook {
+  position: absolute;
+  top: 13px;
+  left: 19px;
+  width: 8.672px;
+  height: 18.944px;
+  fill: #ffffff;
+}
+
+.social__link-youtube {
+  position: absolute;
+  top: 17px;
+  left: 14px;
+  width: 19.979px;
+  height: 14.015px;
+  fill: #ffffff;
 }
 
 @media (min-width: $tablet-width) {
@@ -72,10 +72,10 @@
     width: 256px;
     margin: 0;
     padding: 0;
+  }
 
-    &__list {
-      padding-left: 47px;
-    }
+  .social__list {
+    padding-left: 47px;
   }
 }
 

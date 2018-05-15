@@ -7,19 +7,6 @@
   box-sizing: border-box;
   background-color: #ffffff;
 
-  &__toggle {
-    position: absolute;
-    top: 241px;
-    left: 277px;
-    display: block;
-    width: 24px;
-    height: 22px;
-    border: none;
-    cursor: pointer;
-    z-index: 2;
-    background-color: transparent;
-  }
-
   &--closed .main-nav__toggle::before {
     content: "";
     position: absolute;
@@ -56,21 +43,34 @@
   }
 }
 
+.main-nav__toggle {
+  position: absolute;
+  top: 241px;
+  left: 277px;
+  display: block;
+  width: 24px;
+  height: 22px;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  background-color: transparent;
+}
+
 @media (min-width: $tablet-width) {
   .main-nav {
     width: auto;
     margin: 0;
+  }
 
-    &__wrapper {
-      display: flex;
-      justify-content: space-between;
-      width: 768px;
-      margin: 0 auto;
-    }
+  .main-nav__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 768px;
+    margin: 0 auto;
+  }
 
-    &__toggle {
-      display: none;
-    }
+  .main-nav__toggle {
+    display: none;
   }
 }
 

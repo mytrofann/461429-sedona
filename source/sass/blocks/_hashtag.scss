@@ -4,17 +4,17 @@
   margin-bottom: 36px;
   padding: 0;
   background-color: #fefefe;
+}
 
-  &__item {
-    margin: 0;
-    padding: 0;
-    padding-left: 91px;
-    padding-bottom: 20px;
-    font-size: 21px;
-    line-height: 26px;
-    font-weight: bold;
-    text-transform: uppercase;
-  }
+.hashtag__item {
+  margin: 0;
+  padding: 0;
+  padding-left: 91px;
+  padding-bottom: 20px;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 @media (min-width: $tablet-width) {
@@ -24,12 +24,12 @@
     padding: 0;
     padding-top: 11px;
     box-sizing: border-box;
+  }
 
-    &__item {
-      padding: 0;
-      padding-left: 60px;
-      padding-bottom: 0;
-    }
+  .hashtag__item {
+    padding: 0;
+    padding-left: 60px;
+    padding-bottom: 0;
   }
 }
 
