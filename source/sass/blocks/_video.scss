@@ -46,7 +46,7 @@
     bottom: 66px;
     width: 280px;
     height: 45px;
-    background-color: #0000008e;
+    background-color: rgba(0, 0, 0, 0.6);
   }
 
   &__scall {
@@ -54,7 +54,7 @@
     top: -23px;
     left: 22px;
     width: 233px;
-    border: 1px solid #ffffff44;
+    background-color: rgba(255, 255, 255, 0.3);
   }
 
   &__slider {
