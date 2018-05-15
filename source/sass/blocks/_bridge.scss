@@ -140,11 +140,15 @@
     }
 
     &__title {
-      padding: 0 20px;
+      padding-left: 22px;
       padding-bottom: 10px;
       display: inline-block;
       font-size: 21px;
       font-weight: 700;
+
+      &--position {
+        display: block;
+      }
     }
 
     &__list {
@@ -192,6 +196,11 @@
       width: 400px;
     }
 
+    &__title {
+      padding-left: 54px;
+      padding-bottom: 10px;
+    }
+
     &__number {
       padding-left: 130px;
 
@@ -199,6 +208,10 @@
         padding-left: 100px;
         padding-bottom: 20px;
       }
+    }
+
+    &__description--tourist {
+      padding-left: 0;
     }
 
     &__list {

@@ -102,6 +102,10 @@
 
     &__description {
       padding: 0 160px;
+
+      &--position {
+        display: block;
+      }
     }
   }
 }

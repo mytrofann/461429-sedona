@@ -207,7 +207,7 @@
       bottom: 39px;
       width: 648px;
       height: 93px;
-      background-color: #00000083;
+      background-color: rgba(0, 0, 0, 0.6);
     }
 
     &__replay {
@@ -281,7 +281,11 @@
     &__description {
       margin: 0;
       margin-bottom: 51px;
-      padding: 0 102px;
+      padding: 0 80px;
+
+      &--position {
+        display: block;
+      }
     }
 
     &__scall {
@@ -294,7 +298,6 @@
       bottom: 85px;
       width: 800px;
       height: 93px;
-      background-color: #00000083;
     }
 
     &__subtitles {
