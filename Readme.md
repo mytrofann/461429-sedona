@@ -1,6 +1,6 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Front-End Developer: [Dmitriy Kravchuk](https://up.htmlacademy.ru/adaptive/14/user/461429).
+* Front-End Developer: [Dmitriy Kravchuk](https://www.linkedin.com/in/mytrofann/).
 
 ---
 
